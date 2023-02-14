@@ -1,1 +1,15 @@
-p { color: red; }
+p { color: blue; }
+
+li {
+    font-weight: bold;
+}
+
+a {
+    color: coral;
+}
+
+h1 {
+    text-decoration: underline;
+    background-color: aquamarine;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+h1, h2, h3 {
+    font-family: monospace;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+
+h2 {
+    letter-spacing: 10px;
+}
