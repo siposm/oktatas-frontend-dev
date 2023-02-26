@@ -50,7 +50,7 @@ Hozza létre az alábbi ábrán látható elrendezést HTML és CSS segítségé
     - az alsó egy inputmező amiben több sorban ki lehet fejteni az üzenetet
     - valamint egy gomb ami elküldené a beírt adatokat
 
-### Minta
+### Figma terv / minta
 
 [A mintát itt lehet tetszőlegesen zoomolható méretben megtekinteni.](https://www.figma.com/file/sJz7iPn0M9dbiWy7H7Hx3q/frontend-demo?node-id=0%3A1&t=e96on3VqfF3GnqNe-1)
 
