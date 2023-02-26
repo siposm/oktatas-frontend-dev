@@ -1,13 +1,14 @@
-# Workshop 1.
+# Workshop #1
 
-| Kliensoldali fejlesztés | Sipos Miklós |
+| Kliensoldali fejlesztés | |
 |-----|---|
-| Feldolgozandó modul(ok): | modul-1, modul-2 |
-| Témakör: | HTML, CSS |
-| Cím: | Saját HTML és CSS segítségével történő weboldal építése |
+| Feldolgozandó modulok: | modul-1, modul-2 |
+| Témakörök: | HTML, CSS |
+| Cím: | Saját HTML és CSS segítségével történő weboldal kialakítása |
 | Félév: | 2023 tavaszi félév |
+| Oktató: | Sipos Miklós |
 
-### Feladat
+## Feladat
 
 Hozza létre az alábbi ábrán látható elrendezést HTML és CSS segítségével, majd a szükséges módosításokat végezze el a kikötéseknek megfelelően. Azok a részek amik kinézete nincsen egzaktul specifikálva, tetszőlegesen megvalósíthatók.
 
