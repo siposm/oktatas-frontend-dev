@@ -26,10 +26,10 @@ Kliensoldali fejlesztéssel kapcsolatos tématerületek áttekintése. A leíró
 ```
 
 Kulcsszavak:
-`HTML`
-`CSS`
-`markdown`
-`TeX`
+  `HTML`
+  `CSS`
+  `markdown`
+  `TeX`
 
 <br>
 <br>
@@ -53,20 +53,20 @@ A CSS haladó funkcióinak valamint további HTML elemeknek a megismerése. Olda
 ```
 
 Kulcsszavak:
-`HTML`
-`CSS`
-`flexbox`
-`div`
-`grid`
-`box shadow`
-`gradient`
-`border`
-`radius`
-`margin`
-`padding`
-`px`
-`em`
-`rem`
+  `HTML`
+  `CSS`
+  `flexbox`
+  `div`
+  `grid`
+  `box shadow`
+  `gradient`
+  `border`
+  `radius`
+  `margin`
+  `padding`
+  `px`
+  `em`
+  `rem`
 
 <br>
 <br>
@@ -99,7 +99,10 @@ Kulcsszavak:
     `execution context`
     `scope chain"`
         
-        
+<br>
+<br>
+<br>
+
 ### Modul 4: JavaScript középhaladó ismeretek
 
 A DOM megismerése. DOM elemek lekérdezése és módosítása. Felületi elemek programozása. Stílusok és stíluslapok programozott előállítása. Oldalbetöltés folyamata. Események kezelése.
