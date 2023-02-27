@@ -67,3 +67,56 @@ Kulcsszavak:
 `px`
 `em`
 `rem`
+
+<br>
+<br>
+<br>
+
+### Modul-3: JavaScript alapok, nyelvi sajátosságok
+
+A JavaScript nyelv története, működése (runtime, engine, fordított és értelmezett nyelvek közti különbség megismerése), nyelvi sajátosságai (típusok, változótípusok, operátorok, függvények, objektumok és osztályok).
+
+```
+  todo
+  todo
+  todo
+```
+
+Kulcsszavak:
+    `ECMAScript`
+    `const`
+    `let`
+    `var`
+    `prototype`
+    `JS engine`
+    `runtime`
+    `compiled`
+    `interpreted`
+    `JIT`
+    `event loop`
+    `TDZ`
+    `hoisting`
+    `execution context`
+    `scope chain"`
+        
+        
+### Modul 4: JavaScript középhaladó ismeretek
+
+A DOM megismerése. DOM elemek lekérdezése és módosítása. Felületi elemek programozása. Stílusok és stíluslapok programozott előállítása. Oldalbetöltés folyamata. Események kezelése.
+
+```
+  todo
+  todo
+  todo
+```
+
+Kulcsszavak:
+    `DOM`
+    `document object model`
+    `attribute`
+    `style`
+    `class`
+    `querySelector`
+    `getElementBy`
+    `onClick`
+    `eventHandler`
