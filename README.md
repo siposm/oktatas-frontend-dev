@@ -1,3 +1,10 @@
+### Követelmények
+https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes/
+
+<br>
+<br>
+<br>
+
 ### Modul-1: HTML és CSS alapok
 
 ```
