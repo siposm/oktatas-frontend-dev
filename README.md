@@ -1,11 +1,16 @@
 ### Követelmények
 https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes/
 
+### Tárgy weboldala
+https://nik.siposm.hu/kf
+
 <br>
 <br>
 <br>
 
 ### Modul-1: HTML és CSS alapok
+
+Kliensoldali fejlesztéssel kapcsolatos tématerületek áttekintése. A leíró nyelvek megismerése (HTML, markdown, Tex). A szerver-kliens alapú kommunikáció folyamata. Alapvető HTML oldal létrehozása és saját stílusokkal történő kiegészítése CSS segítségével. A head elem részletes bemutatása.
 
 ```
   1.1 Bevezető, tárgyismertető
@@ -20,7 +25,19 @@ https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes/
   1.10 A head elem
 ```
 
+Kulcsszavak:
+`HTML`
+`CSS`
+`markdown`
+`TeX`
+
+<br>
+<br>
+<br>
+
 ### Modul-2: HTML és CSS haladó ismeretek
+
+A CSS haladó funkcióinak valamint további HTML elemeknek a megismerése. Oldalstruktúra kialakítása (div, flexbox, grid). Webergonómia, tipográfia, UI és UX alapismeretek. Reszponzív alkalmazás készítésének alapelvei. CSS extra lehetőségek.
 
 ```
   2.1 CSS haladó ismeretek I.
@@ -34,3 +51,19 @@ https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes/
   2.9 Feladatmegoldás
   2.10 Feladatmegoldás kiegészítő
 ```
+
+Kulcsszavak:
+`HTML`
+`CSS`
+`flexbox`
+`div`
+`grid`
+`box shadow`
+`gradient`
+`border`
+`radius`
+`margin`
+`padding`
+`px`
+`em`
+`rem`
