@@ -78,7 +78,7 @@ A JavaScript nyelv története, nyelvi sajátosságai (típusok, változótípus
 
 ```
   3.01 Bevezető
-  3.02 JS történelem, nyelvi alapok
+  3.02 JS történelem, nyelvi alapok és sajátosságok
   3.03 Szerver-kliens kommunikáció
   3.04 Feladatmegoldás, fejlesztői környezet bemutatása
   3.05 Típusok, függvények, osztályok és objektumok
