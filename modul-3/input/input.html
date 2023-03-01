@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-custom-class {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Please enter your name!</h3>
+    <hr>
+    <div id="myDiv" style="height: 200px; width: 200px; border: 2px solid red;"
+        onclick="helloDiv()"></div>
+    <input
+        type="text"
+        name=""
+        id="input-name"
+        placeholder="Your name goes here"
+    >
+    <button
+        id="btn-send"
+    >
+        Send
+    </button>
+
+    <script>
+        function helloDiv () {
+            console.log("szia a div-ből");
+            document.querySelector("#myDiv").classList.toggle("my-custom-class")
+        }
+
+
+        let sendButton = document.querySelector('#btn-send')
+        sendButton.addEventListener('click', processName)
+
+        function processName () {
+            let inputName = document.querySelector('#input-name').value
+            console.log('Hello ' + inputName)
+
+            let p = document.createElement('p') // elem létrehozás mindig ÖNÁLLÓAN
+            p.innerHTML = inputName
+
+            document.querySelector('body').appendChild(p)
+
+            let colors = ["red","blue","green","purple","yellow","pink"]
+            let rndBorder = Math.round(Math.random() * colors.length)
+            let rndBg = Math.round(Math.random() * colors.length)
+
+            document.body.style.border = "4px solid " + colors[rndBorder]
+            document.body.style.backgroundColor = colors[rndBg]
+        }
+    </script>
+</body>
+</html>
