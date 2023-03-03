@@ -129,13 +129,34 @@ Kulcsszavak:
 
 ### Modul 4: JavaScript középhaladó ismeretek
 
-A JS mélyebb szintű működése (runtime, engine, fordított és értelmezett nyelvek közti különbség megismerése)
+Haladó eseménykezelés a JavaScript-ben. Események paraméterezése, eseményobjektum, események továbbadása (buborékozás, delegálás), saját események létrehozása. Gyakorlati feladatmegoldások (interaktív to do lista készítése, automatizált képcserélés, rajzolás, felhasználó eltérítése (~erőltetett hirdetés)).
 
 ```
-  todo
-  todo
-  todo
+  4.01 Bevezető
+  4.02 Haladó eseménykezelés I.
+  4.03 Feladat: eseményobjektum
+  4.04 Haladó eseménykezelés II., Feladat: események továbbítása
+  4.05 Saját események létrehozása
+  4.06 Feladat: Automatizált képfrissítő
+  4.07 Feladat: Rajzolás
+  4.08 Feladat: Felhasználó eltérítése
+  4.09 Feladat: To do alkalmazás készítése
 ```
 
 Kulcsszavak:
+  `createElement`
+  `addEventListener`
+  `appendChild`
+  `querySelector`
+  `setTimeout`
+  `setInterval`
+  `toggle`
+  `keyPress`
+  `classList`
+  `event bubbling`
+  `event capturing`
     
+<br>
+<br>
+<br>
+
