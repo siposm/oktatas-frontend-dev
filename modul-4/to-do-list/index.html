@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <style>
+        .ready {
+            color: rgb(22, 199, 22);
+            text-decoration: line-through;
+        }
+        .ready:before {
+            content: "🎄 ";
+        }
+    </style>
+</head>
+<body>
+    <h3>To do list</h3>
+    <hr>
+    <input type="text" id="new-todo-input">
+    <button id="add-new-todo-btn">Add new todo</button>
+    <hr>
+    <div id="list">
+        <ul></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
