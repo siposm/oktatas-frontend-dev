@@ -47,6 +47,7 @@
     - A féléves feladatokat a vizsgaidőszakban, a vizsgát megelőző nap délig lehet frissíteni. Azt követően új kód nem kerülhet a repository-ba.
 - Üzemmérnök-informatikus képzés esetén:
     - A féléves feladatokat a 14. héten a labor idejében kell bemutatni. A kódokat aznap reggel 8:00-ig lehet frissíteni, ezt követően új kód nem kerülhet a repository-ba.
+- A határidőkre minden működő kód a `master branch`-be legyen bemergelve.
 
 <br>
 <br>
@@ -125,4 +126,4 @@ A kötelező elemeken túl opcionálisan megvalósítható funkciókkal plusz po
 - A félév folyamán a kódot fokozatosan kell fejleszteni, commitolni.
 - Az elvárt minimum commit szám: 40
 - Multibranch használta szükséges, melyben `feature/xy` alapon kell létrehozni a brancheket. A branch-ek ne legyenek törölve a mergelések után.
-
+- A leadáskor minden működő kód a `master branch`-be legyen bemergelve.
