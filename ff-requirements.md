@@ -88,7 +88,7 @@ A kötelező elemeken túl opcionálisan megvalósítható funkciókkal plusz po
 | valamilyen egyéb CSS keretrendszert használ (pl. Tailwind) akár meglévővel kombinálva, akár kizárólagosan | 1 |
 | teszteli a frontend komponenseket, funkciókat | 1 |
 | valamilyen részét az alkalmazásnak valós időben mutatja SignalR segítségével | 1 |
-| GitHub-on Kanban board és ticket-ek (GitHub projects) alapján folyik a fejlesztés | 1 |
+| GitHub-on Kanban board és ticket-ek (GitHub projects) alapján folyik a fejlesztés (vagy ennek megfelelő alternatívával pl. Jira board) | 1 |
 
 <br>
 <br>
