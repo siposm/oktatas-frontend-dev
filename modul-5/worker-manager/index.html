@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Worker manager</title>
+    <link rel="stylesheet" href="dark-mode.css">
+    <style>
+        body {
+            padding: 50px;
+        }
+        li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Enable dark mode</label>
+    </div>
+    <h3>Worker manager</h3>
+    <hr>
+    <button data-param="age" id="sort-by-age-btn" type="button" class="btn btn-outline-primary">Sort by age</button>
+    <button data-param="job" id="sort-by-job-btn" type="button" class="btn btn-outline-primary">Sort by job</button>
+    <button data-param="name" id="sort-by-name-btn" type="button" class="btn btn-outline-primary">Sort by name</button>
+    <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Job</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div id="content">
+        <ul></ul>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
