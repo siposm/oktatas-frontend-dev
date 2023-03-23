@@ -1,0 +1,21 @@
+body {
+    padding: 50px;
+}
+li {
+    padding: 5px 0;
+}
+nav {
+    padding-top: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+tbody img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+tr {
+    vertical-align: middle;
+}
