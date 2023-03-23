@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>See dev console</p>
+    <hr>
+    <script>
+
+        let x = {
+            name: 'miklos',
+            method: function () {
+                console.log('hello world! it is: ' + this.name) // 'miklos'
+                console.log(name) // 'emtpy / nothing'
+            },
+            method2: function () {
+                function getName () {
+                    return this.name // this -> window (global call)
+                }
+                console.log('>>> ' + getName()) // not working version
+                console.log('>>> ' + getName.call(this)) // working version
+            }
+        }
+
+        x.method()
+        
+        x.method2()
+
+        function test () {
+            console.log(this) // Window object
+        }
+
+        test()
+
+    </script>
+</body>
+</html>

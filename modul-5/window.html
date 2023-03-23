@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Window stuff</h3>
+    <hr>
+    <button onclick="openWindow()">Open new window</button>
+    <button onclick="checkHistory()">Check history</button>
+    <button onclick="goBackInHistory()">Go back in history</button>
+    <hr>
+    <button onClick="changeLocation('lorem')">lorem</button>
+    <button onClick="changeLocation('ipsum')">ipsum</button>
+    <button onClick="changeLocation('dolor')">dolor</button>
+    <button onClick="changeLocation('sit')">sit</button>
+    <hr>
+    <script>
+        function changeLocation (param) {
+            let _param = param+".html"
+            window.history.pushState({}, "", _param)
+        }
+        function goBackInHistory () {
+            window.history.back()
+        }
+        function checkHistory () {
+            console.log(window.history)
+        }
+        function openWindow () {
+            let w = window.open('https://nik.siposm.hu', 'siposm', 'width=800,height=600,scrollbars=yes')
+            
+            // w.document.querySelector(p) // Cross-origin policy!
+            
+            w.resizeTo(400, 200)
+            
+            console.log(w.opener) // https://developer.mozilla.org/en-US/docs/Web/API/Window/opener
+            console.log(w.opener.location)
+            
+            // w.close()
+        }
+    </script>
+</body>
+</html>
