@@ -22,22 +22,17 @@ function sortBy (param) {
     let sortByValue = param.target.dataset.param
     console.log(sortByValue)
 
-    let temp = []
     if(sortByValue === 'age')
-        temp = workers.sort((a,b) => { return a[sortByValue] - b[sortByValue] })
+        workers.sort((a,b) => { return a[sortByValue] - b[sortByValue] })
     else if(sortByValue === 'name' || sortByValue === 'job')
-        temp = workers.sort((a,b) => { return a[sortByValue].localeCompare(b[sortByValue]) })
+        workers.sort((a,b) => { return a[sortByValue].localeCompare(b[sortByValue]) })
 
     // if(param === 'age')
-    //     temp = workers.sort((a,b) => { return a.age - b.age })
+    //     workers.sort((a,b) => { return a.age - b.age })
     // else if(param === 'job')
-    //     temp = workers.sort((a,b) => { return a.job - b.job })
+    //     workers.sort((a,b) => { return a.job - b.job })
     // else if(param === 'name')
-    //     temp = workers.sort((a,b) => { return a.name - b.name })
-
-    console.log(temp)
-
-    workers = temp
+    //     workers.sort((a,b) => { return a.name - b.name })
 
     tbody.innerHTML = renderer.renderTable(workers)
 }
