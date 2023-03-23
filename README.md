@@ -122,7 +122,6 @@ Kulcsszavak:
     `first-class functions`
     `event loop concurrency model`
 
-        
 <br>
 <br>
 <br>
@@ -155,6 +154,51 @@ Kulcsszavak:
   `classList`
   `event bubbling`
   `event capturing`
+    
+<br>
+<br>
+<br>
+
+### Modul 5: JavaScript haladó ismeretek I.
+
+További JS nyelvi elemek és adatszerkezetek használata. Web APIk és a BOM megismerése. Kódszervezés modulba rendezett file-ok segítségével. Egységbezárás osztályok esetén és a this kulcsszó vonatkozása. Adat helyének meghatározása, illetve az adat leképezése generáláson keresztül. Imperatív és deklaratív felhasználói felület kezelése. Progresszív webalkalmazás (weboldal vs webalkalmazás) fejlesztésének bemutatása, a GD és PE koncepciókon keresztül.
+
+```
+  5.01 Bevezető
+  5.02 További JS nyelvi elemek
+  5.03 Adatszerkezetek
+  5.04 Web API-k (BOM, window)
+  5.05 Kódszervezés (modulok használata)
+  5.06 Egységbezárás
+  5.07 Adattárolás (adat leválasztása, HTML generálás)
+  5.08 Imperatív és deklaratív UI kezelés
+  5.09 Progresszív weboldal fejlesztés (weboldal vs webalkalmazás)
+  5.10 Feladat: Dolgozó kezelő alkalmazás dark-mode támogatással
+```
+
+Kulcsszavak:
+  `typeof`
+  `Date`
+  `array`
+  `Map`
+  `BOM`
+  `browser object model`
+  `web APIs`
+  `window`
+  `setTimeout`
+  `setInterval`
+  `import`
+  `export`
+  `module`
+  `class`
+  `DOM`
+  `imperative`
+  `declarative`
+  `graceful degradation`
+  `progressive enhancement`
+  `dark mode`
+  `render`
+  `this`
     
 <br>
 <br>
