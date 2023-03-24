@@ -19,3 +19,7 @@ tbody img {
 tr {
     vertical-align: middle;
 }
+
+td, th {
+    text-align: center;
+}
