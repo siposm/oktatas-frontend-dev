@@ -9,14 +9,13 @@ let tbody = document.querySelector('tbody')
 let students = await createStudentArray()
 let renderer = new Renderer()
 render()
-
+getStats()
 
 // ---------------------------------
 //      CRUD functions
 // ---------------------------------
 
 document.querySelector('#add-new-student-btn').addEventListener('click', addNewStudent)
-
 
 function deleteStudent (e) {
     let idToDelete = e.target.dataset.studId
@@ -132,4 +131,23 @@ function disableDarkModeByDefault () {
 
 function switchMode () {
     document.styleSheets[1].disabled = !document.styleSheets[1].disabled
+}
+
+
+
+// ------------------------
+//      Stats
+// ------------------------
+function getStats () {
+    let sumConnections = students.reduce((sum,item) => sum + item.connections , 0)
+    let avgSemesterCount = (students.reduce((sum,item) => sum + item.activeSemesterCount , 0)) / students.length
+
+    let p1 = document.createElement('p')
+    p1.innerHTML = 'SUM connections: ' + sumConnections
+
+    let p2 = document.createElement('p')
+    p2.innerHTML = 'AVG semester count: ' + avgSemesterCount
+
+    document.querySelector('#stats').appendChild(p1)
+    document.querySelector('#stats').appendChild(p2)
 }
