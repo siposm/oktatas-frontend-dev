@@ -91,6 +91,23 @@ function addNewStudent () {
 
 
 // ---------------------------------
+//      Filter functions
+// ---------------------------------
+
+document.querySelector('#filter-for-active-btn').addEventListener('click', filterForActive)
+document.querySelector('#filter-for-inactive-btn').addEventListener('click', filterForInActive)
+
+function filterForActive () {
+    students = students.filter(x => x.isActive)
+    render()
+}
+
+function filterForInActive () {
+    students = students.filter(x => !x.isActive)
+    render()
+}
+
+// ---------------------------------
 //      Sorting functions
 // ---------------------------------
 document.querySelector('#sort-by-age-btn').addEventListener('click', sortBy)
