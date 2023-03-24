@@ -6,31 +6,27 @@ export class Renderer {
             s += '<tr>'
 
             s += '<td>'
-            s += '<img src='+stud.Image+'>'
+            s += '<img src='+stud.image+'>'
             s += '</td>'
 
             s += '<td>'
-            s += stud.NeptunID
+            s += stud.name
             s += '</td>'
 
             s += '<td>'
-            s += stud.Name
+            s += this.isActive(stud.isActive)
             s += '</td>'
 
             s += '<td>'
-            s += this.isActive(stud.IsActive)
+            s += stud.birthYear
             s += '</td>'
 
             s += '<td>'
-            s += stud.BirthYear
+            s += stud.completedCredits
             s += '</td>'
 
             s += '<td>'
-            s += stud.CompletedCredits
-            s += '</td>'
-
-            s += '<td>'
-            s += stud.ActiveSemesterCount
+            s += stud.activeSemesterCount
             s += '</td>'
 
             s += '</tr>'
