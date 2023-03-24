@@ -37,6 +37,10 @@ export class Renderer {
             s += stud.id
             s += '</td>'
 
+            s += '<td>'
+            s += '<button data-stud-id="'+stud.id+'" type="button" class="btn btn-outline-danger delete-student-btn">X</button>'
+            s += '</td>'
+
             s += '</tr>'
         })
         return s

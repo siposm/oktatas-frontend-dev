@@ -8,7 +8,7 @@ let tbody = document.querySelector('tbody')
 
 let students = await createStudentArray()
 let renderer = new Renderer()
-tbody.innerHTML = renderer.renderTable(students)
+render()
 
 
 // ---------------------------------
@@ -16,6 +16,29 @@ tbody.innerHTML = renderer.renderTable(students)
 // ---------------------------------
 
 document.querySelector('#add-new-student-btn').addEventListener('click', addNewStudent)
+
+
+function deleteStudent (e) {
+    let idToDelete = e.target.dataset.studId
+
+    fetch("https://practiceapi.nikprog.hu/Student/" + idToDelete, {
+            method: "DELETE",
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Success:", data)
+            
+            // remove from array
+            let index = students.findIndex(x => x.id === idToDelete)
+            students.splice(index, 1)
+
+            // re-render everything
+            render()
+        })
+        .catch((error) => {
+            console.error("Error:", error)
+        })
+}
 
 function addNewStudent () {
 
@@ -60,11 +83,11 @@ function addNewStudent () {
             console.log("STUDENTS:",students)
             
             // re-render everything
-            tbody.innerHTML = renderer.renderTable(students)
+            render()
         })
         .catch((error) => {
             console.error("Error:", error)
-        });
+        })
 }
 
 
@@ -83,7 +106,18 @@ function sortBy (param) {
     else if(sortByValue === 'name')
         students.sort((a,b) => { return a[sortByValue].localeCompare(b[sortByValue]) })
     
+    render()
+}
+
+// ------------------------
+//      Render
+// ------------------------
+function render () {
     tbody.innerHTML = renderer.renderTable(students)
+
+    document.querySelectorAll('.delete-student-btn').forEach(x => {
+        x.addEventListener('click', deleteStudent)
+    })
 }
 
 
