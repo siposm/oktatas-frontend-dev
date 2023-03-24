@@ -49,8 +49,8 @@ export class Renderer {
     isActive(status) {
         return status
             ?
-            '<span class="badge rounded-pill bg-success mx-2">T</span>'
+            '<span class="badge rounded-pill bg-success">T</span>'
             :
-            '<span class="badge rounded-pill bg-danger mx-2">F</span>'
+            '<span class="badge rounded-pill bg-danger">F</span>'
     }
 }
