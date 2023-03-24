@@ -19,8 +19,6 @@ async function createStudentArray() {
       ))
    })
    return studs
-
-   return []
 }
 
 export { createStudentArray }

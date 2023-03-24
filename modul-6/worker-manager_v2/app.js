@@ -42,4 +42,3 @@ function disableDarkModeByDefault () {
 function switchMode () {
     document.styleSheets[1].disabled = !document.styleSheets[1].disabled
 }
-
