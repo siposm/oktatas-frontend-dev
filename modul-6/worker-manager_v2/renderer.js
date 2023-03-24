@@ -22,11 +22,19 @@ export class Renderer {
             s += '</td>'
 
             s += '<td>'
+            s += stud.connections
+            s += '</td>'
+
+            s += '<td>'
             s += stud.completedCredits
             s += '</td>'
 
             s += '<td>'
             s += stud.activeSemesterCount
+            s += '</td>'
+
+            s += '<td>'
+            s += stud.id
             s += '</td>'
 
             s += '</tr>'
