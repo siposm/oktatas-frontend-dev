@@ -204,3 +204,44 @@ Kulcsszavak:
 <br>
 <br>
 
+### Modul 6: JavaScript haladó ismeretek II.
+
+Haladó ismeretek bővítése az alábbi fogalmak megismerésével: callback függvény, promise-ok létrehozása és kezelése, az async-await páros felhasználása. A CORS jelenség bemutatása. Beépített tömb metódusok megismerése és használata. Komplex feladat megoldása backend API hívásokkal (Fetch API-t és Promise-okat felhasználva), melyeken keresztül lehet hallgatókat listázni, új hallgatót felvenni, meglévő hallgatót módosítani.
+
+```
+  6.01 Bevezető
+  6.02 Callback
+  6.03 Promise
+  6.04 Async-await
+  6.05 CORS
+  6.06 Array methods
+  6.07 Feladat: GET API (hallgatók lekérése)
+  6.08 Feladat: POST API (hallgató felvitele)
+  6.09 Feladat: DELETE API (hallgató törlése)
+  6.10 Feladat: Array method felhasználás
+```
+
+Kulcsszavak:
+  `fetch`
+  `GET`
+  `POST`
+  `DELETE`
+  `API`
+  `postman`
+  `swagger`
+  `promise`
+  `callback`
+  `async`
+  `await`
+  `CORS`
+  `filter`
+  `reduce`
+  `map`
+  `forEach`
+  `findIndex`
+  `sticky navbar`
+
+<br>
+<br>
+<br>
+
