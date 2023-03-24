@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h3>Promise</h3>
+    <p>See console</p>
+    <hr>
+
+    <script>
+
+        let names = []
+
+        let p = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                
+                let a = 'apple'
+                if(a === 'apple') {
+                    names.push('john doe')
+                    names.push('jane doe')
+                    resolve('Success')
+                }
+                else
+                    reject('Error')
+
+            }, 3000)
+        })
+
+        console.log(p)
+
+        console.log('x')
+        console.log('y')
+        console.log('z')
+
+        console.log(names)
+
+        p.then(message => {
+            console.log("Everything was ok!" + message)
+            console.log(names)
+        }).then(() => {
+            console.log("hello")
+        }).then(() => {
+            console.log("world")
+        }).catch(message => {
+            console.log("Error happened!" + message)
+        })
+    </script>
+</body>
+</html>
