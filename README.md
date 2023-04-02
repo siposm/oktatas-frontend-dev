@@ -246,3 +246,48 @@ Kulcsszavak:
 <br>
 <br>
 
+### Modul 7: JavaScript haladó ismeretek III.
+
+Haladó ismeretek bővítése a JS működési hátterének megismerésével. JS Engine és Runtime fogalmak megismerése és a hozzájuk szorosan kapcsolódó további fogalmak (compilation, interpretation, JIT, AST, event loop, execution context, call stack, scope chain, hositing, TDZ). Valódi párhuzamosságra alkalmas módszer megismerése. Az AJAX technológia és annak jelentőségének megismerése.
+
+```
+  7.01 Bevezető
+  7.02 JS engine
+  7.03 AST
+  7.04 JS runtime, Event loop
+  7.05 Execution context, Call stack
+  7.06 Scope chain
+  7.07 Hoisting, TDZ
+  7.08 Web workers
+  7.09 AJAX
+```
+
+Kulcsszavak:
+  `compilation`
+  `interpretation`
+  `JIT`
+  `just in time compilation`
+  `AST`
+  `abstract syntax tree`
+  `engine`
+  `runtime`
+  `event loop`
+  `execution context`
+  `call stack`
+  `callback queue`
+  `scope chain`
+  `global scope`
+  `function scope`
+  `local scope`
+  `block scope`
+  `var`
+  `let`
+  `const`
+  `hoist`
+  `TDZ`
+  `temporal dead zone`
+
+<br>
+<br>
+<br>
+
