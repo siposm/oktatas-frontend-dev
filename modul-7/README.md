@@ -1,0 +1,1 @@
+A modul nem tartalmaz kódot.
