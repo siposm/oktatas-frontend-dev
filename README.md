@@ -120,7 +120,8 @@ Kulcsszavak:
     `single-threaded`
     `garbage-collected`
     `first-class functions`
-    `event loop concurrency model`
+    `event loop`
+    `concurrency model`
 
 <br>
 <br>
