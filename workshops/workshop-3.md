@@ -43,6 +43,7 @@ Készítsen egy kliensoldali programot JavaScript, HTML és CSS segítségével,
         - sikeres API hívás esetén a UI-hoz tartozó tömbben keresse meg a frissítendő elemet és csak azt az egyet frissítse, majd frissítse a UI-t is
         - hibakezelést és vizsgálatot (pl. létezik-e ilyen id-jú elem) nem szükséges csinálnia jelenleg, tételezzük fel, hogy jó és valós adatokat írunk be a Student módosításához
     - `CREATE`
-        - dedikált részt nem szükséges neki létrehozni a UI-on, ha szükség lenne elem felvitelre a fejlesztés alatt, akkor Swagger-ből hozzon létre új elemeket
+        - hozzon létre az oldal tetején egy dedikált részt, ahol 1 db textarea és egy gomb legyen
+        - a textarea-ba egy JSON objektumot tudunk betenni (hasonlóan ahogy a Swagger ide vonatkozó felületén látjuk) és gombnyomás hatására ezt olvassa ki, ebből hozzon létre egy objektumot és azt küldje el a megfelelő backend végpontra
         - figyeljen arra, hogy a backendhez mindenki hozzáfér, így javasolt, hogy a felvitt elemek nevét lássa el a saját nevének kezdőbetüivel prefixelve, a könnyebb átláthatóság érdekében, és majd később csak ezeket az elemeket frissítse / törölje
         - példa: Gipsz Jakab esetén a felvett új hallgató neve: `GJ-JohnDoe`
