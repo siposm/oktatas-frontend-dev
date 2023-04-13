@@ -291,3 +291,39 @@ Kulcsszavak:
 <br>
 <br>
 
+### Modul 8: JS Keretrendszerek, Vue alapok
+
+A JavaScript keretrendszerek és library közötti különbség bemutatása. A jQuery megismerése, történelmi áttekintése. A JavaScript aktuális helyzete a piacon (state of JS). Template engine-k és a virtual DOM jelentőségének bemutatása a modern keretrendszerek esetén. A Vue keretrendszer bemutatása (felhasználása vue cli, illetve CDN-en keresztül), strukturális felépítése, vue2 és vue3 közötti különbségek ismertetése. Gyakorlati alkalmazás létrehozása Vue segítségével (adatkötés és API kezelés bemutatása), a vue lifecycle megismerésével. Komplex gyakorlati alkalmazás létrehozása komponens alapú fejlesztéssel.
+
+```
+  8.01 Bevezető
+  8.02 Framework vs library
+  8.03 Template engine
+  8.04 Virtual DOM
+  8.05 State of JS
+  8.06 Vue elméleti alapok
+  8.07 Vue gyakorlati alapok (CDN, CLI, strukturális felépítés, adatkötés)
+  8.08 Vue gyakorlati alapok (API kezelés, lifecycle)
+  8.09 Feladatmegoldás: adatbeolvasás és megjelenítés
+  8.10 Feladatmegoldás: új elem létrehozása
+  8.11 Feladatmegoldás: komponens alapú refaktorálás
+```
+
+Kulcsszavak:
+  `CDN`
+  `cli`
+  `lifecycle`
+  `vue`
+  `virtual DOM`
+  `data binding`
+  `v-model`
+  `v-for`
+  `.vue`
+  `component`
+  `computed`
+  `property`
+
+<br>
+<br>
+<br>
+
