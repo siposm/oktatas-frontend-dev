@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue TO DO manager</title>
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body { padding: 30px; }
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <h1>TODOS: <span class="badge" :class="todoCounterColor">{{ todoCounter }}</span></h1>
+
+    <hr>
+
+    <todo-item
+        v-for="todo in todos"
+        v-bind:text="todo.text"
+        v-bind:type="todo.type"
+        v-bind:tags="todo.tags"
+        v-bind:key="todo.text"
+    ></todo-item>
+
+    <hr>
+
+    <input v-model="newTodo.text" placeholder="Todo text" class="form-control mb-3">
+
+    <div class="form-group">
+        <select v-model="newTodo.type" class="form-control">
+            <option disabled>Please select one</option>
+            <option v-for="type in todoTypes" :value="type.value">
+                {{ type.text }}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <select v-model="newTodo.tags" multiple class="form-control">
+            <option disabled>Please select one</option>
+            <option v-for="tag in tagOptions">
+                {{ tag }}
+            </option>
+        </select>
+    </div>
+
+    <button class="btn btn-success btn-block" v-on:click="addNewTodo">Add To Do</button>
+
+    <hr class="my-5">
+
+    <input v-model="newTag" placeholder="Tag text" class="form-control mb-3">
+
+    <button class="btn btn-primary btn-block" v-on:click="addNewTag">Add Tag</button>
+
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script type="module">
+
+    Vue.component('todo-item', {
+
+        props: ['text', 'type', 'tags'],
+
+        methods: {
+            toUpper: function (tag) {
+                return tag.toUpperCase()
+            },
+            deleteTodo: function (todoText) {
+
+                // deletion will be based on text --> NOT GOOD!!! Id should be used, but for the moment it's ok.
+
+                for (let i = 0; i < this.$parent.todos.length; i++) {
+                    if (this.$parent.todos[i].text === todoText)
+                        this.$parent.todos.splice(i,1)
+                }
+
+                // TODO add API call for REMOVE (deletion)
+            }
+        },
+
+        template: `
+
+            <div>
+                <div class="alert alert-dismissible fade show" v-bind:class="type" role="alert">
+                    {{ text }}
+                    <div>
+                    <template v-for="tag in tags">
+                        <span class="badge badge-secondary mr-1">
+                            {{ toUpper(tag) }}
+                        </span>
+                    </template>
+                    </div>
+                    <button @click="deleteTodo(text)" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+
+        `
+    })
+
+    var app = new Vue({
+
+        el: '#app',
+        data: {
+            newTodo: { text: "", type: "Please select one", tags: []},
+            newTag: "",
+            todoTypes: [
+                { text: "primary", value: "alert-primary" },
+                { text: "danger", value: "alert-danger" },
+                { text: "warning", value: "alert-warning" },
+                { text: "success", value: "alert-success" }
+            ],
+            tagOptions: [
+                "new", "urgent", "pending", "personal", "work"
+            ],
+            todos: [
+                { text: "", type: "", tags: [] },
+            ]
+        },
+        computed: {
+            todoCounter: function () {
+                return this.todos.length
+            },
+            todoCounterColor: function () {
+                if(this.todos.length > 8)
+                    return "badge-danger"
+                else
+                    return "badge-success"
+            }
+        },
+        methods: {
+            addNewTodo: function () {
+
+                this.todos.push(this.newTodo) // TODO add error handling if not correctly selected todo type is wanted to be added
+                this.newTodo = { text: "", type: "Please select one", tags: [] }
+
+                // TODO add API call for CREATE
+
+            },
+            addNewTag: function () {
+                this.tagOptions.push(this.newTag)
+                this.newTag = "" // reset back
+            }
+        },
+
+        // see mounted --> https://vuejs.org/v2/guide/instance.html
+        mounted () {
+            axios.get('https://gist.githubusercontent.com/siposm/86860e30a000a5dca4b0855f7644bcf2/raw/ec987cdc3680b22e13595c3044e659d574be4448/todos.json')
+                .then(x => {
+                    console.log(x.data.todos);
+                    this.todos = x.data.todos
+                    console.log(this.todos);
+                })
+        }
+    })
+
+</script>
+</body>
+</html>
