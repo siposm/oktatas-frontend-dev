@@ -1,16 +1,16 @@
 export default {
-    props: ['text', 'type', 'tags'],
+    props: ['id', 'text', 'type', 'tags'],
 
     methods: {
         toUpper: function (tag) {
             return tag.toUpperCase()
         },
-        deleteTodo: function (todoText) {
+        deleteTodo: function (todoId) {
 
             // deletion will be based on text --> NOT GOOD!!! Id should be used, but for the moment it's ok.
 
             for (let i = 0; i < this.$parent.todos.length; i++) {
-                if (this.$parent.todos[i].text === todoText)
+                if (this.$parent.todos[i].id === todoId)
                     this.$parent.todos.splice(i,1)
             }
 
@@ -30,7 +30,7 @@ export default {
                     </span>
                 </template>
                 </div>
-                <button @click="deleteTodo(text)" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <button @click="deleteTodo(id)" type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>

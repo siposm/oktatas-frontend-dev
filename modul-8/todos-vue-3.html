@@ -14,8 +14,6 @@
     </style>
 </head>
 <body>
-    <h1>Vue TO DO manager</h1>
-    <hr>
     <div id="app">
 
         <h1>TODOS: <span class="badge" :class="todoCounterColor">{{ todoCounter }}</span></h1>
@@ -24,6 +22,7 @@
     
         <todo-item
             v-for="todo in todos"
+            v-bind:id="todo.id"
             v-bind:text="todo.text"
             v-bind:type="todo.type"
             v-bind:tags="todo.tags"
@@ -85,9 +84,7 @@
                     tagOptions: [
                         "new", "urgent", "pending", "personal", "work"
                     ],
-                    todos: [
-                        { text: "", type: "", tags: [] },
-                    ]
+                    todos: []
                 }
             },
             computed: {
@@ -115,9 +112,9 @@
                     this.newTag = "" // reset back
                 },
                 fetchData: async function () {
-                    const url = 'https://gist.githubusercontent.com/siposm/86860e30a000a5dca4b0855f7644bcf2/raw/ec987cdc3680b22e13595c3044e659d574be4448/todos.json'
+                    const url = 'https://gist.githubusercontent.com/siposm/86860e30a000a5dca4b0855f7644bcf2/raw/39c5c3947ee5469532bd7d6ddea6b54e58acd3c0/todos.json'
                     this.todos = (await (await fetch(url)).json()).todos
-                    console.log(this.todos);
+                    console.log(this.todos[0]);
                 }
             },
             created() {
