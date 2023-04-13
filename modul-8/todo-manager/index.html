@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <title>Vue TO DO manager</title>
+    
+    <style>
+        body { padding: 40px; padding-left: 60px; }
+    </style>
+</head>
+<body>
+    <div id="app">
+
+        <h1>
+            TODOS: 
+            <span class="badge" :class="todoCounterColor">
+                {{ todoCounter }}
+            </span>
+        </h1>
+    
+        <hr>
+
+        <todo-item
+            v-for="todo in todos"
+            
+            v-bind:id="todo.id"
+            v-bind:text="todo.text"
+            v-bind:type="todo.type"
+            v-bind:tags="todo.tags"
+            v-bind:key="todo.id"
+        >
+        </todo-item>
+
+
+        <!-- <div v-for="todo in todos">
+            <div
+                class="alert alert-dismissible fade show"
+                role="alert"
+                v-bind:class="todo.type"
+            >
+                {{ todo.id }}
+                <br>                    
+                {{ todo.text }}
+                <div>
+                    <template v-for="tag in todo.tags">
+                        <span class="badge badge-secondary mr-2">
+                            {{ tagToUpper(tag) }}
+                        </span>
+                    </template>
+                </div>
+
+                <button
+                    type="button"
+                    class="close"
+                    data-dismiss="alert"
+                    aria-label="Close"
+                    @click="deleteToDo(todo.id)"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div> -->
+
+        <input
+            v-model="newTodo.text"
+            type="text"
+            placeholder="Text of the To Do item"
+            class="form-control mb-3"
+        >
+
+        <div class="form-group">
+            <select v-model="newTodo.type" class="form-control">
+                <option disabled>Please select one</option>
+                <option v-for="type in todoTypes" :value="type.value">
+                    {{ type.text }}
+                </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <select multiple v-model="newTodo.tags" class="form-control">
+                <option disabled>Please select one</option>
+                <option v-for="tag in tagOptions">
+                    {{ tag }}
+                </option>
+            </select>
+        </div>
+
+        <button
+            class="btn btn-success btn-block"
+            v-on:click="addNewTodo"
+        >
+            Add To Do item
+        </button>
+
+        <hr class="my-5">
+
+        <input
+            v-model="newTag"
+            type="text"
+            placeholder="Content of the tag"
+            class="form-control mb-3"
+        >
+
+        <button
+            class="btn btn-primary btn-block"
+            v-on:click="addNewTag"
+        >
+            Add new tag
+        </button>
+
+    </div>
+
+    <script type="module">
+
+        import TodoItem from './todo-item.js'
+
+        const { createApp } = Vue
+
+        createApp({
+            components: {
+                TodoItem
+            },
+            data() {
+                return {
+                    todos: [],
+                    newTag: '',
+                    newTodo: {
+                        id: '',
+                        text: '',
+                        type: 'Please select one',
+                        tags: []
+                    },
+                    todoTypes: [
+                        { text: 'primary', value: 'alert-primary' },
+                        { text: 'danger', value: 'alert-danger' },
+                        { text: 'warning', value: 'alert-warning' },
+                        { text: 'success', value: 'alert-success' }
+                    ],
+                    tagOptions: ['new', 'urgent', 'pending', 'personal', 'work']
+                }
+            },
+            computed: {
+                todoCounter() {
+                    return this.todos.length
+                },
+                todoCounterColor() {
+                    if(this.todos.length > 10)
+                        return 'badge-danger'
+                    else if(this.todos.length > 5)
+                        return 'badge-warning'
+                    else
+                        return 'badge-success'
+                }
+            },
+            methods: {
+                async fetchData() {
+                    const url = 'https://gist.githubusercontent.com/siposm/86860e30a000a5dca4b0855f7644bcf2/raw/39c5c3947ee5469532bd7d6ddea6b54e58acd3c0/todos.json'
+                    this.todos = (await (await fetch(url)).json()).todos
+                    
+                    console.log(this.todos)
+                },
+                tagToUpper(tag) {
+                    return tag.toUpperCase()
+                },
+                deleteToDo(todoId) {
+                    let index = this.todos.findIndex(x => x.id === todoId)
+                    this.todos.splice(index, 1)
+                },
+                addNewTodo() {
+                    this.newTodo.id = Math.floor(Math.random() * Date.now())
+                    this.todos.push(this.newTodo)
+                    this.newTodo = {
+                        text: '',
+                        type: 'Please select one',
+                        tags: []
+                    }
+                    // backend API call should be here
+                },
+                addNewTag() {
+                    this.tagOptions.push(this.newTag)
+                    this.newTag = ''
+                    // backend API call should be here
+                }
+            },
+            created() {
+                this.fetchData()
+            },
+        }).mount('#app')
+
+    </script>
+</body>
+</html>
