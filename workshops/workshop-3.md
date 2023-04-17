@@ -3,7 +3,7 @@
 | Kliensoldali fejlesztés | |
 |-----|---|
 | Feldolgozandó modulok: | modul-5, modul-6 |
-| Témakörök: | JS, HTML, CSS |
+| Témakörök: | JS, Bootstrap, custom CSS |
 | Cím: | CRUD JavaScript alkalmazás készítése backend API-t felhasználva |
 | Félév: | 2023 tavaszi félév |
 | Oktató: | Sipos Miklós |
@@ -39,7 +39,7 @@ Készítsen egy kliensoldali programot JavaScript, HTML és CSS segítségével,
         - lehessen kijelölt hallgatót törölni, ehhez a card-on található gombot használja fel, amely legyen piros színű és a 'Delete' szöveg legyen benne
         - a törlést követően frissítse a kliensoldali adatszerkezetet és a UI-t is
     - `UPDATE`
-        - lehessen egy hallgatót frissíteni, ehhez az oldal tetején hozzon létre egy elkerített részt kék háttérrel, amelyen belül hozzon létre input mezőket és hozzájuk tartozó placeholder-eket, minden tulajdonságnak egy dedikáltat, valamint egy piros gombot 'Add new Student' felirattal
+        - lehessen egy hallgatót frissíteni, ehhez az oldal tetején hozzon létre egy elkerített részt kék háttérrel, amelyen belül hozzon létre input mezőket és hozzájuk tartozó placeholder-eket, minden tulajdonságnak egy dedikáltat, valamint egy piros gombot 'Update Student' felirattal
         - ezeket az input mezőket kitöltve a hallgató adataival, a gomb lenyomását követően frissítse az elemet
         - az egyszerűség kedvéért a card-okon helyezzen el még egy gombot, kék színnel, amelyre rákattintva az adott Student adatai töltődjenek be a megfelelő inputmezőkbe
         - sikeres API hívás esetén a UI-hoz tartozó tömbben keresse meg a frissítendő elemet és csak azt az egyet frissítse, majd frissítse a UI-t is
