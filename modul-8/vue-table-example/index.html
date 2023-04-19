@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <title>Vue Students</title>
+    
+    <style>
+        body { padding: 40px; padding-left: 60px; }
+    </style>
+</head>
+<body>
+    <div id="app">
+
+        <h1>
+            Students
+        </h1>
+    
+        <hr>
+
+        <table class="table">
+            <tr>
+                <th>Student name</th>
+                <th>ID</th>
+                <th>Birth year</th>
+            </tr>
+            <template v-for="student in students">
+                <tr
+                    is="vue:student-item"
+                    v-bind:name="student.name"
+                    v-bind:id="student.id"
+                    v-bind:birthyear="student.birthYear"
+                ></tr>
+                <!-- properties (like birthyear) on the left must be all lower case -->
+            </template>
+        </table>
+
+    </div>
+
+    <script type="module">
+
+        import StudentItem from './student.js'
+
+        const { createApp } = Vue
+
+        createApp({
+            components: {
+                StudentItem
+            },
+            data() {
+                return {
+                    students: [],
+                }
+            },
+            computed: {
+            },
+            methods: {
+                async fetchData() {
+                    const url = 'https://practiceapi.nikprog.hu/Student'
+                    this.students = await (await fetch(url)).json()
+                    
+                    console.log(this.students)
+                },
+            },
+            created() {
+                this.fetchData()
+            },
+        }).mount('#app')
+
+    </script>
+</body>
+</html>
