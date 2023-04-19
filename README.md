@@ -327,3 +327,32 @@ Kulcsszavak:
 <br>
 <br>
 
+### Modul 9: TypeScript, Angular alapok
+
+A tech stack fogalmának megismerése és az elterjedt alternatívák vizsgálata. A TypeScript nyelv megismerése, alapvető példák bemutatása. Angular projekt létrehozására szolgáló opciók megismerése. Angular projekt futtatása, Angular CLI-on keresztül (ng serve), vagy NPM-en keresztül (npm start). Angular alkalmazás fájlstruktúrájának megismerése, valamint az alapvető nyelvi elemek megismerése (ciklus, if, adatkötés, típusosság).
+
+```
+  9.01 Bevezető
+  9.02 Tech stack
+  9.03 TypeScript elmélet
+  9.04 TypeScript gyakorlat
+  9.05 Angular (projekt létrehozás (node, npm))
+  9.06 Angular (alkalmazás futtatás (node, ng))
+  9.07 Angular alapvető nyelvi elemek megismerése
+```
+
+Kulcsszavak:
+  `tech stack`
+  `JAM`
+  `MEAN`
+  `LAMP`
+  `ng serve`
+  `npm start`
+  `node`
+  `typescript`
+  `angular`
+
+<br>
+<br>
+<br>
+
