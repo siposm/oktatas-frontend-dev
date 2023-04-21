@@ -356,3 +356,33 @@ Kulcsszavak:
 <br>
 <br>
 
+### Modul 10: Angular középhaladó ismeretek
+
+To Do alkalmazás készítése Angular segítségével. Adatkötés (tömb, input mezők) és típusok (TypeScript) használata. Keretrendszeri elemek használata: ngFor, click, class és value adatkötése. Fetch API használata.
+
+```
+  10.01 Bevezető
+  10.02 Projekt inicializálás
+  10.03 Adatbetöltés fetch API-val
+  10.04 Elemek megjelenítése
+  10.05 Elemek törlése
+  10.06 Új elem felvitele
+  10.07 Port beállítás
+```
+
+Kulcsszavak:
+  `fetch`
+  `binding`
+  `[(ngModel)]`
+  `[value]`
+  `[class]`
+  `(click)`
+  `ngFor`
+  `FormsModule`
+  `app.module.ts`
+
+
+<br>
+<br>
+<br>
+
