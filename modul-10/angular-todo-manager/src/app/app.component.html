@@ -1,0 +1,99 @@
+<div class="content" role="main">
+  <h1>Angular TO DO Manager</h1>
+  <hr>
+  <h3>
+    <span [class]="counterColor()" class="badge mr-2">
+      {{ counter() }}
+    </span>
+    TODOS
+  </h3>
+  
+  <hr>
+  
+  <!-- CREATE TO DO -->
+  <input
+      [(ngModel)]="newTodo.text"
+      type="text"
+      placeholder="Text of the To Do item"
+      class="form-control mb-3"
+  >
+
+  <div class="form-group">
+      <select [(ngModel)]="newTodo.type" class="form-control">
+          <option disabled>Please select one</option>
+          <option *ngFor="let type of todoTypes" [value]="type.value">
+              {{ type.text }}
+          </option>
+      </select>
+  </div>
+
+  <div class="form-group">
+      <select multiple [(ngModel)]="newTodo.tags" class="form-control">
+          <option disabled>Please select at least one</option>
+          <option *ngFor="let tag of tagOptions" [value]="tag">
+              {{ tag }}
+          </option>
+      </select>
+  </div>
+
+  <button
+      class="btn btn-success btn-block"
+      (click)="addNewTodo()"
+  >
+      Add To Do item
+  </button>
+  
+  <!-- CREATE NEW TAG -->
+  <hr class="my-5">
+
+  <input
+      [(ngModel)]="newTag"
+      type="text"
+      placeholder="Content of the tag"
+      class="form-control mb-3"
+  >
+
+  <button
+      class="btn btn-primary btn-block"
+      (click)="addNewTag()"
+  >
+      Add new tag
+  </button>
+
+  <hr class="my-5">
+
+  <!-- DISPLAY TODO ITEMS -->
+  <div
+    *ngFor="let item of todos"
+    [class]="styleBinding(item)"
+    class="alert alert-dismissible fade show"
+    role="alert"
+  >
+    <p>
+      {{ item.text }}
+    </p>
+    <hr>
+    <span
+      *ngFor="let tag of item.tags"
+      class="badge badge-info mr-2"
+    >
+      {{ tag|uppercase }}
+    </span>
+    <hr>
+    <p class="mb-0">
+      {{ item.id }}
+    </p>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="alert"
+      aria-label="Close"
+      (click)="deleteToDo(item)"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>
