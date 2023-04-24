@@ -24,9 +24,8 @@ Készítsen egy kliensoldali programot Angular keretrendszer felhasználásával
     - a szükséges típusokhoz tartozó `.ts` állományokat és osztályokat hozza létre
 - **funkciók megvalósítása**
     - a rendszer töltse be a végpontról a termékeket, melyeket [táblázatos](https://getbootstrap.com/docs/5.0/content/tables/) formában jelenítsen meg
-    - a táblázat oszlopai legyenek sorrendben megfeleltetve az objektum tulajdonságainak, kivéve a `description` és az `images`, e kettőt nem kell itt megjeleníteni
-    - a `thumbnail` egy kis kör alakú képként jelenjen meg az `id` után közvetlenül, majd a `title` és utána a többi tulajdonság sorrendben következik
-        ```
+    - egy termék objektum az alábbiaknak megfelelően épül fel
+        ``` json
             {
                 "id": 1,
                 "title": "iPhone 9",
@@ -45,8 +44,10 @@ Készítsen egy kliensoldali programot Angular keretrendszer felhasználásával
                     "https://i.dummyjson.com/data/products/1/4.jpg",
                     "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
                 ]
-            },
+            }
         ```
+    - a táblázat oszlopai legyenek sorrendben megfeleltetve az objektum tulajdonságainak, kivéve a `description` és az `images`, e kettőt nem kell itt megjeleníteni
+    - a `thumbnail` egy kis kör alakú képként jelenjen meg az `id` után közvetlenül, majd a `title` és utána a többi tulajdonság sorrendben következik
     - a táblázatban az adott sor legyen legyen sárga, zöld vagy piros hátterű (ehhez a [Bootstrap-ban található class-okat](https://getbootstrap.com/docs/5.0/content/tables/#variants) használja fel, ne egyedi CSS-t írjon) attól függően, hogy adott termékből a stock értéke mennyi, azaz mennyi van belőle még raktáron
         - 0-50 között --> alacsony készlet --> piros
         - 50-100 között --> közepes készlet --> sárga
