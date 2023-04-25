@@ -1,13 +1,39 @@
-<h1>Welcome!</h1>
-<hr>
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Fixed navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
 
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
+<!-- Begin page content -->
+<main role="main" class="container">
+  <div class="mt-5">
+    <router-outlet></router-outlet>
+  </div>
+</main>
 
-<hr>
-<footer>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus corrupti libero sapiente delectus, fugit quaerat eligendi autem rerum maiores laborum incidunt at ut voluptatibus architecto amet debitis esse. Iste.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id placeat porro voluptate voluptates deserunt corporis aspernatur omnis, ea at doloribus ipsa quisquam nisi atque natus ipsam vitae, numquam recusandae.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique culpa praesentium nostrum, eum consequuntur ex animi fuga nesciunt, error, molestiae laborum! Id alias, ipsum obcaecati ab error soluta dolores!</p>
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
 </footer>
