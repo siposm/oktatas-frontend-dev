@@ -1,18 +1,24 @@
-<h1>Search user</h1>
+<h1 class="mb-5">Search user</h1>
 
-<div class="card mt-5" style="width: 18rem;">
-    <img class="card-img-top" alt="Card image cap" [src]="user.image">
-    <div class="card-body">
-        <h5 class="card-title">{{ user.firstName }} {{ user.lastName }}</h5>
-        <p class="card-text"></p>
-    </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item" *ngFor="let item of getProperties()">
-            {{ item }}
-        </li>
-    </ul>
-    <div class="card-body">
-        <button class="btn btn-danger mr-2">Delete</button>
-        <button class="btn btn-warning">Edit</button>
-    </div>
+<div *ngIf="!userLoaded(); else elseBlock" class="alert alert-danger" role="alert">
+    No such user in the system! Try with different name.
 </div>
+
+<ng-template #elseBlock>
+    <div class="card mt-5" style="width: 18rem;">
+        <img class="card-img-top" alt="Card image cap" [src]="user.image">
+        <div class="card-body">
+            <h5 class="card-title">{{ user.firstName }} {{ user.lastName }}</h5>
+            <p class="card-text"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let item of getProperties()">
+                {{ item }}
+            </li>
+        </ul>
+        <div class="card-body">
+            <button class="btn btn-danger mr-2">Delete</button>
+            <button class="btn btn-warning">Edit</button>
+        </div>
+    </div>
+</ng-template>

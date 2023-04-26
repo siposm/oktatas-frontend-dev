@@ -11,13 +11,13 @@ export class SearchUserComponent implements OnInit {
   
   http: HttpClient
   users: Array<any>
-  route:ActivatedRoute
+  route: ActivatedRoute
   user: any
 
   constructor(http: HttpClient, route:ActivatedRoute) {
     this.http = http
     this.route = route
-    this.user = {}
+    this.user = undefined
     this.users = []
   }
   
@@ -39,6 +39,13 @@ export class SearchUserComponent implements OnInit {
         err => console.log(err)
       )
     })
+  }
+
+  public userLoaded() : boolean {
+    if (this.user === undefined)
+      return false
+    else
+      return true
   }
 
   public getProperties() {
