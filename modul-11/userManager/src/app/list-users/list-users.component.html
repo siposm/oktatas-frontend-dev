@@ -1,1 +1,31 @@
-<p>list-users works!</p>
+<h1 class="mb-5">List users</h1>
+
+<table class="table table-sm table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Birth date</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <th scope="row">{{ user.id }}</th>
+            <td>
+                <img [src]="user.image" class="user-image">
+                {{ user.firstName }}
+            </td>
+            <td>{{ user.lastName }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.birthDate }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.username }}</td>
+        </tr>
+    </tbody>
+</table>
