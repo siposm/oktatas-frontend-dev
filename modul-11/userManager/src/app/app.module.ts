@@ -10,6 +10,7 @@ import { ListUsersComponent } from './list-users/list-users.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ListCommentsComponent } from './list-comments/list-comments.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListCommentsComponent } from './list-comments/list-comments.component';
     WorldComponent,
     WelcomeComponent,
     ListUsersComponent,
-    ListCommentsComponent
+    ListCommentsComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

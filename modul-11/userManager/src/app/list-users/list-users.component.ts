@@ -45,3 +45,15 @@ export class ListUsersComponent {
   public formatPhoneNumber(number: string) : string {
     return number.replaceAll(' ', '-')
   }
+
+  public deleteUser(user: User) {
+    this.http.delete('https://dummyjson.com/users/' + user.id)
+    .subscribe((success) => {
+      console.log(success)
+      let i = this.users.findIndex(x => x.id === user.id)
+      this.users.splice(i, 1)
+    }, (error) => {
+      console.log(error)
+    })
+  }
+}

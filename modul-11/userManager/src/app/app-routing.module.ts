@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditUserComponent } from './edit-user/edit-user.component';
 import { HelloComponent } from './hello/hello.component';
 import { ListCommentsComponent } from './list-comments/list-comments.component';
 import { ListUsersComponent } from './list-users/list-users.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'users', component: ListUsersComponent },
   { path: 'comments', component: ListCommentsComponent },
+  { path: 'edituser/:id', component: EditUserComponent },
   { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
 ];
 

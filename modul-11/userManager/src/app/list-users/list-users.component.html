@@ -11,6 +11,7 @@
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
             <th scope="col">Username</th>
+            <th scope="col">&nbsp;</th>
         </tr>
     </thead>
     <tbody>
@@ -26,6 +27,20 @@
             <td>{{ user.email }}</td>
             <td>{{ formatPhoneNumber(user.phone) }}</td>
             <td>{{ user.username }}</td>
+            <td>
+                <button
+                    (click)="deleteUser(user)"
+                    class="btn btn-sm btn-danger mr-2"
+                >
+                    X
+                </button>
+                <button
+                    [routerLink]="['/edituser/', user.id]"
+                    class="btn btn-sm btn-warning"
+                >
+                    Edit
+                </button>
+            </td>
         </tr>
     </tbody>
 </table>
