@@ -8,17 +8,22 @@ import { WorldComponent } from './world/world.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ListUsersComponent } from './list-users/list-users.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ListCommentsComponent } from './list-comments/list-comments.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     WorldComponent,
     WelcomeComponent,
-    ListUsersComponent
+    ListUsersComponent,
+    ListCommentsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

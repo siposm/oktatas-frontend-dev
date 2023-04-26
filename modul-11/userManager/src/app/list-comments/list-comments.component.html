@@ -1,0 +1,54 @@
+<div class="mb-5">
+    <button
+        (click)="orderByLikeNumber()"
+        class="btn btn-sm btn-outline-primary"
+    >
+        Order by like numbers
+    </button>
+</div>
+
+<h1 class="mb-5">List comments</h1>
+
+<div class="card mb-5" *ngFor="let comment of comments">
+    <div class="card-header">
+        <div>
+            <span class="badge badge-secondary">
+                {{ comment.likeCounter }}
+            </span>
+            - number of likes
+        </div>
+        <div>
+            <span class="badge badge-secondary">
+                {{ comment.id }}
+            </span>
+            - comment id
+        </div>
+        <div>
+            <span class="badge badge-secondary">
+                {{ comment.user.id }}
+            </span>
+            - user id
+        </div>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">
+            <img [src]="comment.user.image" class="user-image">
+            u/{{ comment.user.username }}
+        </h5>
+        <hr>
+        <p class="card-text">{{ comment.body }}</p>
+        <hr>
+        <button
+            (click)="likeComment(comment)"
+            class="btn btn-sm btn-success mr-2"
+        >
+            Like
+        </button>
+        <button
+            (click)="dislikeComment(comment)"
+            class="btn btn-sm btn-warning"
+        >
+            Dislike
+        </button>
+    </div>
+</div>
