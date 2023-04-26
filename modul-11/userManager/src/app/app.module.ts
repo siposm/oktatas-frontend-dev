@@ -13,6 +13,7 @@ import { ListCommentsComponent } from './list-comments/list-comments.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 
 import { FormsModule } from '@angular/forms';
+import { SearchUserComponent } from './search-user/search-user.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     WelcomeComponent,
     ListUsersComponent,
     ListCommentsComponent,
-    EditUserComponent
+    EditUserComponent,
+    SearchUserComponent
   ],
   imports: [
     BrowserModule,

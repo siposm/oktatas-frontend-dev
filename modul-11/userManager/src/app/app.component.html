@@ -30,8 +30,15 @@
         </li> -->
       </ul>
       <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <input
+          class="form-control mr-sm-2"
+          type="text"
+          placeholder="Search for name"
+          aria-label="Search"
+          [(ngModel)]="username"
+          [ngModelOptions]="{standalone: true}"
+        >
+        <button class="btn btn-success my-2 my-sm-0" type="submit" (click)="searchForUser()">Search</button>
       </form>
     </div>
   </nav>
@@ -46,6 +53,6 @@
 
 <footer class="footer">
   <div class="container">
-    <span class="text-muted">Place sticky footer content here.</span>
+    <span class="text-muted">&copy; Frontend development - siposm - modul-11</span>
   </div>
 </footer>
