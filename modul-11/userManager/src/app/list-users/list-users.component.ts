@@ -41,4 +41,7 @@ export class ListUsersComponent {
       })
     })
   }
-}
+
+  public formatPhoneNumber(number: string) : string {
+    return number.replaceAll(' ', '-')
+  }
