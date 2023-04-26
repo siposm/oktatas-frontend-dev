@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListCommentsComponent } from './list-comments/list-comments.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

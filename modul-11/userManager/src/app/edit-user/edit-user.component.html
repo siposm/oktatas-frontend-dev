@@ -1,2 +1,92 @@
 <h1 class="mb-5">Edit user</h1>
 
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" [(ngModel)]="editIsDisabled" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Disable editing</label>
+</div>
+
+<input
+    [(ngModel)]="user.id"
+    disabled
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="id"
+>
+<input
+    [(ngModel)]="user.firstName"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="firstName"
+>
+<input
+    [(ngModel)]="user.lastName"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="lastName"
+>
+<input
+    [(ngModel)]="user.age"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="age"
+>
+<input
+    [(ngModel)]="user.gender"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="gender"
+>
+<input
+    [(ngModel)]="user.email"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="email"
+>
+<input
+    [(ngModel)]="user.phone"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="phone"
+>
+<input
+    [(ngModel)]="user.username"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="username"
+>
+<input
+    [(ngModel)]="user.password"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="password"
+>
+<input
+    [(ngModel)]="user.birthDate"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="birthDate"
+>
+<input
+    [(ngModel)]="user.image"
+    [disabled]="editIsDisabled"
+    class="form-control form-control mb-2"
+    type="text"
+    placeholder="image"
+>
+
+<button
+    (click)="updateUser()"
+    type="submit"
+    class="btn btn-warning"
+>
+    Update user
+</button>
