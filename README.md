@@ -386,3 +386,41 @@ Kulcsszavak:
 <br>
 <br>
 
+### Modul 11: Angular haladó ismeretek I.
+
+Több komponensből felépülő, User és Comment kezelő CRUD alkalmazás készítése Angular keretrendszerben. Routing felhasználás a navigációban. Komponensek közötti kommunikáció, adattovábbítás. Bootstrap elemek felhasználása.
+
+```
+  11.01 Bevezető
+  11.02 Projekt inicializálás
+  11.03 Komponensek létrehozása
+  11.04 Navigáció és routing beállítása
+  11.05 Felhasználók listázása (táblázat)
+  11.06 Felhasználók törlése
+  11.07 Felhasználók szerkesztése (komponens paraméter átadás)
+  11.08 Kommentek listázása (card)
+  11.09 Felhasználó keresése (komponens paraméter átadás)
+  11.10 Hibaüzenet (feltételes megjelenítés)
+```
+
+Kulcsszavak:
+  `component`
+  `ng g c`
+  `binding`
+  `[src]`
+  `[(ngModel)]`
+  `(click)`
+  `httpClient`
+  `[routerLink]`
+  `navigateByUrl`
+  `GET`
+  `DELETE`
+  `PUT`
+  `scss`
+  `Sass CSS`
+
+
+<br>
+<br>
+<br>
+
