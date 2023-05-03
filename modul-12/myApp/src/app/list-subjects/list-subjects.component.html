@@ -1,1 +1,24 @@
-<p>list-subjects works!</p>
+<h1>Subjects</h1>
+
+<mat-card class="example-card" *ngFor="let subject of subjects">
+    <mat-card-header>
+        <mat-card-title-group>
+            <mat-card-title>{{ subject.name }}</mat-card-title>
+            <mat-card-subtitle>{{ subject.neptun }}</mat-card-subtitle>
+            <img mat-card-sm-image [src]="subject.image">
+        </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            Exam: 
+            <mat-icon *ngIf="subject.exam" [ngClass]="{'green': subject.exam}" aria-label="Example home icon" fontIcon="check_circle"></mat-icon>
+            <mat-icon *ngIf="!subject.exam" [ngClass]="{'red': !subject.exam}" aria-hidden="false" aria-label="Example home icon" fontIcon="cancel"></mat-icon>
+        </p>
+        <p>Credit: {{ subject.credit }}</p>
+        <p>Registered number of students: {{ subject.registeredStudents }}</p>
+        <mat-divider></mat-divider>
+        <p class="subject-id">{{ subject.id }}</p>
+    </mat-card-content>
+</mat-card>
+
+<div id="clear"></div>

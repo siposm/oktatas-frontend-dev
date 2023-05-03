@@ -1,0 +1,41 @@
+h1 {
+    margin-bottom: 50px;
+}
+
+mat-card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    max-width: 300px;
+    float: left;
+}
+
+mat-card {
+    img {
+        border-radius: 20px;
+    }
+}
+
+mat-card {
+    mat-icon {
+        font-size: 1.4em;
+        position: relative;
+        top: 0.5em;
+    }
+}
+
+.subject-id {
+    font-size: 0.8em;
+    color: #929292;
+}
+
+#clear {
+    clear: both;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: rgb(192, 3, 3)
+}
