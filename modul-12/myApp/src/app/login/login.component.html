@@ -1,1 +1,31 @@
-<p>login works!</p>
+<h1>Login</h1>
+
+<mat-form-field appearance="outline">
+    <mat-label>Email address</mat-label>
+    <input
+        matInput
+        [(ngModel)]="this.loginModel.email"
+        [formControl]="this.email">
+    <mat-icon matSuffix>email</mat-icon>
+    <mat-hint>Your registered email address</mat-hint>
+    <mat-error *ngIf="this.email.invalid">{{getEmailErrorMessage()}}</mat-error>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input 
+        matInput
+        type="password"
+        [(ngModel)]="this.loginModel.password">
+    <mat-icon matSuffix>lock</mat-icon>
+    <mat-hint>Your password used during registration</mat-hint>
+</mat-form-field>
+
+<button
+    mat-flat-button
+    color="accent"
+    (click)="sendLoginCredentials()"
+    [disabled]="!checkInputs()"
+>    
+    Login
+</button>
