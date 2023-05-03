@@ -1,0 +1,56 @@
+h1 {
+    margin-bottom: 50px;
+}
+
+mat-card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    max-width: 500px;
+    float: left;
+}
+
+mat-card {
+    mat-divider {
+        margin: 10px 0;
+    }
+}
+
+mat-card {
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        border: 1px solid #d6d6d6;
+    }
+}
+
+mat-card {
+    mat-icon {
+        font-size: 1.4em;
+        position: relative;
+        top: 0.5em;
+    }
+}
+
+mat-card {
+    button {
+        font-size: 0.8em;
+    }
+}
+
+.teacher-id {
+    font-size: 0.8em;
+    color: #929292;
+}
+
+#clear {
+    clear: both;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: rgb(192, 3, 3)
+}
