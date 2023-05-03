@@ -15,6 +15,7 @@
             <button
                 mat-stroked-button
                 *ngFor="let subject of teacher.teachedSubjects"
+                [routerLink]="['/update-subject/', subject.id]"
             >
                 {{ subject.name }} - {{ subject.neptun }} - ({{ subject.credit }})
             </button>

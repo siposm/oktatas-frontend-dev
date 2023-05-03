@@ -11,13 +11,21 @@
     <mat-card-content>
         <p>
             Exam: 
-            <mat-icon *ngIf="subject.exam" [ngClass]="{'green': subject.exam}" aria-label="Example home icon" fontIcon="check_circle"></mat-icon>
-            <mat-icon *ngIf="!subject.exam" [ngClass]="{'red': !subject.exam}" aria-hidden="false" aria-label="Example home icon" fontIcon="cancel"></mat-icon>
+            <mat-icon class="exam-icon" *ngIf="subject.exam" [ngClass]="{'green': subject.exam}" aria-label="" fontIcon="check_circle"></mat-icon>
+            <mat-icon class="exam-icon" *ngIf="!subject.exam" [ngClass]="{'red': !subject.exam}" aria-hidden="false" aria-label="" fontIcon="cancel"></mat-icon>
         </p>
         <p>Credit: {{ subject.credit }}</p>
         <p>Registered number of students: {{ subject.registeredStudents }}</p>
         <mat-divider></mat-divider>
         <p class="subject-id">{{ subject.id }}</p>
+        <mat-divider></mat-divider>
+        <button
+            mat-stroked-button
+            [routerLink]="['/update-subject/', subject.id]"
+        >
+            <mat-icon aria-hidden="false" aria-label="Edit icon" fontIcon="edit"></mat-icon>
+            Edit
+        </button>
     </mat-card-content>
 </mat-card>
 
