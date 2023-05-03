@@ -3,16 +3,22 @@
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
         Home
     </button>
+    
     <button mat-stroked-button [matMenuTriggerFor]="menu">Functions</button>
     <mat-menu #menu="matMenu">
         <button mat-menu-item routerLink="/teachers">List Teachers</button>
         <button mat-menu-item routerLink="/subjects">List Subjects</button>
     </mat-menu>
     
+    <button mat-stroked-button routerLink="/register" *ngIf="!this.api.isLoggedIn()">Register</button>
 
-    <button mat-stroked-button routerLink="/register">Register</button>
-    <button mat-flat-button color="accent" routerLink="/login">
+    <button mat-flat-button color="accent" routerLink="/login" *ngIf="!this.api.isLoggedIn()">
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="login"></mat-icon>
         Login
+    </button>
+    
+    <button mat-stroked-button color="accent" [routerLink]="['/logout']" *ngIf="this.api.isLoggedIn()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">logout</mat-icon>
+        Logout
     </button>
 </nav>

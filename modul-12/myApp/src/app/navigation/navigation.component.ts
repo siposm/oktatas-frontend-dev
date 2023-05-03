@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-navigation',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
+  
+  api:ApiService
 
+  constructor(api:ApiService) {
+    this.api = api
+  }
 }
