@@ -1,2 +1,18 @@
-<button mat-button>Menu</button>
-<button mat-button color="accent">Accent</button>
+<nav>
+    <button mat-stroked-button>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        Home
+    </button>
+    <button mat-stroked-button [matMenuTriggerFor]="menu">Functions</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>List Teachers</button>
+        <button mat-menu-item>List Subjects</button>
+    </mat-menu>
+    
+
+    <button mat-stroked-button>Register</button>
+    <button mat-flat-button color="accent">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="login"></mat-icon>
+        Login
+    </button>
+</nav>
