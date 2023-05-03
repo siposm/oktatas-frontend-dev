@@ -10,6 +10,12 @@ mat-card {
 }
 
 mat-card {
+    mat-divider {
+        margin: 10px 0;
+    }
+}
+
+mat-card {
     img {
         border-radius: 20px;
     }
