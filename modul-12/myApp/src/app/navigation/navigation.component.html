@@ -1,17 +1,17 @@
 <nav>
-    <button mat-stroked-button>
+    <button mat-stroked-button routerLink="/home">
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
         Home
     </button>
     <button mat-stroked-button [matMenuTriggerFor]="menu">Functions</button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item>List Teachers</button>
-        <button mat-menu-item>List Subjects</button>
+        <button mat-menu-item routerLink="/teachers">List Teachers</button>
+        <button mat-menu-item routerLink="/subjects">List Subjects</button>
     </mat-menu>
     
 
-    <button mat-stroked-button>Register</button>
-    <button mat-flat-button color="accent">
+    <button mat-stroked-button routerLink="/register">Register</button>
+    <button mat-flat-button color="accent" routerLink="/login">
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="login"></mat-icon>
         Login
     </button>

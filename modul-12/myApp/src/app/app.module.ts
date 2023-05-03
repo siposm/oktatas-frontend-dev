@@ -13,12 +13,22 @@ import {MatIconModule} from '@angular/material/icon';
 
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListTeachersComponent } from './list-teachers/list-teachers.component';
+import { ListSubjectsComponent } from './list-subjects/list-subjects.component';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    ListTeachersComponent,
+    ListSubjectsComponent,
+    HomeComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
