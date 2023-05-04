@@ -14,7 +14,7 @@ export class UpdateSubjectComponent implements OnInit {
   http: HttpClient
   route: ActivatedRoute
   subject: Subject
-  snackBar:MatSnackBar
+  snackBar: MatSnackBar
   deleteDisabled: boolean
 
   constructor(http: HttpClient, route:ActivatedRoute, snackBar:MatSnackBar) {

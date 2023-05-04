@@ -41,14 +41,14 @@ export class RegisterComponent {
     .subscribe(
       (success) => {
         this.snackBar
-        .open("Registration was successful!.", "Close", { duration: 5000 })
+        .open("Registration was successful!", "Close", { duration: 5000 })
         .afterDismissed()
         .subscribe(() => {
           this.router.navigate(['/home'])
         })
       },
       (error) => {
-        this.snackBar.open("An error happened, please ty again..", "Close", { duration: 5000 })
+        this.snackBar.open("An error happened, please ty again.", "Close", { duration: 5000 })
       })
   }
 }

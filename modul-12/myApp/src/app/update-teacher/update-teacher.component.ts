@@ -49,8 +49,6 @@ export class UpdateTeacherComponent implements OnInit {
   }
 
   public updateTeacher() : void {
-    console.log(this.teacher);
-    
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + localStorage.getItem('nikprog-practiceapi-token')

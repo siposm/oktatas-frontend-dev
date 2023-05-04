@@ -14,7 +14,7 @@ export class ApiService {
     public isLoggedIn():boolean {
         let token = localStorage.getItem('nikprog-practiceapi-token')
         // TODO check expiration date etc.
-        return token != null
+        return token !== null
     }
 
     canActivate() : boolean {

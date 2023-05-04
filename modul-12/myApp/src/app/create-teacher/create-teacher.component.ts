@@ -19,7 +19,7 @@ export class CreateTeacherComponent {
     this.snackBar = snackBar
   }
 
-  public createSubject() : void {
+  public createTeacher() : void {
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + localStorage.getItem('nikprog-practiceapi-token')

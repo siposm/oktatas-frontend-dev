@@ -17,7 +17,7 @@ export class LoginComponent {
   http: HttpClient
   email: FormControl
   snackBar: MatSnackBar
-  loginModel: any
+  loginModel: LoginModel
 
   constructor(http:HttpClient, snackBar:MatSnackBar, router:Router) {
     this.snackBar = snackBar
@@ -52,6 +52,6 @@ export class LoginComponent {
   }
 
   public checkInputs() : boolean {
-    return this.loginModel.email != '' && this.loginModel.password !== ''
+    return this.loginModel.email !== '' && this.loginModel.password !== ''
   }
 }
