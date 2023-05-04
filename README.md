@@ -424,3 +424,57 @@ Kulcsszavak:
 <br>
 <br>
 
+### Modul 12: Angular haladó ismeretek II.
+
+Több komponensből felépülő, Teacher és Subject (valamint a köztük található reláció) kezelő CRUD alkalmazás készítése Angular keretrendszerben. Routing felhasználás a navigációban. Auth guard alkalmazása (csak authentikált felhasználók számára elérhető komponensek). Komponensek közötti kommunikáció, adattovábbítás. Angular Material UI és annak komponenseinek felhasználása. Regisztráció és bejelentkezés implementálása JWT token és localstorage segítségével.
+
+```
+  12.01 Bevezető
+  12.02 Projekt inicializálás, Angular Material UI telepítés
+  12.03 Alap komponensek létrehozása, routing beállítás
+  12.04 Routing és navigáció
+  12.05 Tárgyak listázása
+  12.06 Oktatók listázása
+  12.07 Regisztráció
+  12.08 Bejelentkezés (JWT token)
+  12.09 Route védelem (auth guard)
+  12.10 Oktató és tárgy módosítása, törlése
+  12.11 Oktató és tárgy létrehozása
+  12.12 Oktató és tárgy összerendelése
+```
+
+Kulcsszavak:
+  `MUI`
+  `Material UI`
+  `auth guard`
+  `routing`
+  `login`
+  `logout`
+  `JWT`
+  `localstorage`
+  `bearer token`
+  `registration`
+  `snackbar`
+  `validation`
+  `service`
+  `navigation`
+  `component`
+  `ng g c`
+  `binding`
+  `[src]`
+  `[(ngModel)]`
+  `(click)`
+  `httpClient`
+  `[routerLink]`
+  `PUT`
+  `POST`
+  `GET`
+  `DELETE`
+  `scss`
+  `Sass CSS`
+
+
+<br>
+<br>
+<br>
+
