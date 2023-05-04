@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ApiService } from './api.service';
+import { CreateSubjectComponent } from './create-subject/create-subject.component';
 import { HomeComponent } from './home/home.component';
 import { ListSubjectsComponent } from './list-subjects/list-subjects.component';
 import { ListTeachersComponent } from './list-teachers/list-teachers.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'teachers', component: ListTeachersComponent },
   { path: 'update-teacher/:id', component: UpdateTeacherComponent, canActivate: [ApiService] },
   { path: 'update-subject/:id', component: UpdateSubjectComponent, canActivate: [ApiService] },
+  { path: 'create-subject', component: CreateSubjectComponent, canActivate: [ApiService] },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },

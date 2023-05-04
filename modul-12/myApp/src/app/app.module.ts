@@ -32,6 +32,7 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { UpdateTeacherComponent } from './update-teacher/update-teacher.component';
 import { UpdateSubjectComponent } from './update-subject/update-subject.component';
+import { CreateSubjectComponent } from './create-subject/create-subject.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { UpdateSubjectComponent } from './update-subject/update-subject.componen
     LoginComponent,
     LogoutComponent,
     UpdateTeacherComponent,
-    UpdateSubjectComponent
+    UpdateSubjectComponent,
+    CreateSubjectComponent
   ],
   imports: [
     BrowserModule,

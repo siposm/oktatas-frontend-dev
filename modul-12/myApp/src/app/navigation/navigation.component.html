@@ -8,6 +8,7 @@
     <mat-menu #menu="matMenu">
         <button mat-menu-item routerLink="/teachers">List Teachers</button>
         <button mat-menu-item routerLink="/subjects">List Subjects</button>
+        <button mat-menu-item routerLink="/create-subject" *ngIf="this.api.isLoggedIn()">Create Subject</button>
     </mat-menu>
     
     <button mat-stroked-button routerLink="/register" *ngIf="!this.api.isLoggedIn()">Register</button>

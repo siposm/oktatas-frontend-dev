@@ -1,0 +1,64 @@
+<h1>Create subject</h1>
+
+<mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput
+        [(ngModel)]="this.subject.name">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Name of the subject</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Neptun code</mat-label>
+    <input matInput
+        [(ngModel)]="this.subject.neptun">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Neptun code of the subject</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>ID</mat-label>
+    <input matInput
+        disabled
+        [(ngModel)]="this.subject.id">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>ID of the subject</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Image</mat-label>
+    <input matInput
+        [(ngModel)]="this.subject.image">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Image link of the subject</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Credit</mat-label>
+    <input matInput
+        [(ngModel)]="this.subject.credit">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Credit value of the subject</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Registered students</mat-label>
+    <input matInput
+        [(ngModel)]="this.subject.registeredStudents">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Number of registered students for the subject</mat-hint>
+</mat-form-field>
+
+<mat-checkbox
+    [(ngModel)]="this.subject.exam"
+>
+    Subject has exam or not
+</mat-checkbox>
+
+<button
+    mat-flat-button
+    color="accent"
+    (click)="createSubject()"
+>    
+    Create subject
+</button>
