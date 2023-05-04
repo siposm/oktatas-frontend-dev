@@ -34,8 +34,4 @@ export class ListTeachersComponent implements OnInit {
       console.log(this.teachers)
     })
   }
-
-  // public displaySubjects() : boolean {
-    
-  // }
 }

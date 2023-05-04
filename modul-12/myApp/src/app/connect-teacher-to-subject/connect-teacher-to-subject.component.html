@@ -1,0 +1,56 @@
+<h1>Add Teacher-Subject connection</h1>
+<mat-form-field appearance="outline">
+    <mat-label>Teacher</mat-label>
+    <mat-select [(ngModel)]="selectedTeacherIdToAdd">
+        <mat-option *ngFor="let teacher of teachers" [value]="teacher.id">
+        {{ teacher.name }} - {{ teacher.neptun }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Subject</mat-label>
+    <mat-select [(ngModel)]="selectedSubjectIdToAdd">
+        <mat-option *ngFor="let subject of subjects" [value]="subject.id">
+        {{ subject.name }} - {{ subject.neptun }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<button
+    mat-flat-button
+    color="accent"
+    (click)="addConnection()"
+>    
+    Add connection
+</button>
+
+<mat-divider></mat-divider>
+
+<h1>Remove Teacher-Subject connection</h1>
+
+<mat-form-field appearance="outline">
+    <mat-label>Teacher</mat-label>
+    <mat-select [(ngModel)]="selectedTeacherIdToRemove">
+        <mat-option *ngFor="let teacher of teachers" [value]="teacher.id">
+        {{ teacher.name }} - {{ teacher.neptun }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Subject</mat-label>
+    <mat-select [(ngModel)]="selectedSubjectIdToRemove">
+        <mat-option *ngFor="let subject of subjects" [value]="subject.id">
+        {{ subject.name }} - {{ subject.neptun }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<button
+    mat-flat-button
+    color="warn"
+    (click)="removeConnection()"
+>    
+    Remove connection
+</button>

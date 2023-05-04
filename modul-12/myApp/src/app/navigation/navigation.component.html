@@ -10,6 +10,7 @@
         <button mat-menu-item routerLink="/subjects">List Subjects</button>
         <button mat-menu-item routerLink="/create-subject" *ngIf="this.api.isLoggedIn()">Create Subject</button>
         <button mat-menu-item routerLink="/create-teacher" *ngIf="this.api.isLoggedIn()">Create Teacher</button>
+        <button mat-menu-item routerLink="/connect" *ngIf="this.api.isLoggedIn()">Connect teacher-subject</button>
     </mat-menu>
     
     <button mat-stroked-button routerLink="/register" *ngIf="!this.api.isLoggedIn()">Register</button>

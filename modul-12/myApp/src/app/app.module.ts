@@ -20,6 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+
 
 // COMPONENTS
 import { NavigationComponent } from './navigation/navigation.component';
@@ -34,6 +36,7 @@ import { UpdateTeacherComponent } from './update-teacher/update-teacher.componen
 import { UpdateSubjectComponent } from './update-subject/update-subject.component';
 import { CreateSubjectComponent } from './create-subject/create-subject.component';
 import { CreateTeacherComponent } from './create-teacher/create-teacher.component';
+import { ConnectTeacherToSubjectComponent } from './connect-teacher-to-subject/connect-teacher-to-subject.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,8 @@ import { CreateTeacherComponent } from './create-teacher/create-teacher.componen
     UpdateTeacherComponent,
     UpdateSubjectComponent,
     CreateSubjectComponent,
-    CreateTeacherComponent
+    CreateTeacherComponent,
+    ConnectTeacherToSubjectComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +69,7 @@ import { CreateTeacherComponent } from './create-teacher/create-teacher.componen
     ReactiveFormsModule,
     MatSnackBarModule,
     MatCheckboxModule,
+    MatSelectModule,
 
     MatMenuModule,
     MatButtonModule,
