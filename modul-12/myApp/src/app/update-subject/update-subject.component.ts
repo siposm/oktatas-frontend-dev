@@ -51,10 +51,6 @@ export class UpdateSubjectComponent {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + localStorage.getItem('nikprog-practiceapi-token')
     })
-
-    console.log(headers);
-    
-
     this.http
       .put(
         'https://practiceapi.nikprog.hu/Subject',
