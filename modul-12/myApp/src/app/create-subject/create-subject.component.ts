@@ -12,13 +12,11 @@ export class CreateSubjectComponent {
   http: HttpClient
   subject: Subject
   snackBar:MatSnackBar
-  deleteDisabled: boolean
 
   constructor(http: HttpClient, snackBar:MatSnackBar) {
     this.http = http
     this.subject = new Subject()
     this.snackBar = snackBar
-    this.deleteDisabled = true
   }
 
   public createSubject() : void {
