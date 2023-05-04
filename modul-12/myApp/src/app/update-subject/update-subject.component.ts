@@ -15,12 +15,14 @@ export class UpdateSubjectComponent {
   route: ActivatedRoute
   subject: Subject
   snackBar:MatSnackBar
+  deleteDisabled: boolean
 
   constructor(http: HttpClient, route:ActivatedRoute, snackBar:MatSnackBar) {
     this.http = http
     this.route = route
     this.subject = new Subject()
     this.snackBar = snackBar
+    this.deleteDisabled = true
   }
 
   ngOnInit(): void {
@@ -60,6 +62,29 @@ export class UpdateSubjectComponent {
       .subscribe(
         (success) => {
           this.snackBar.open("Update was successful!", "Close", { duration: 5000 })
+        },
+        (error) => {
+          this.snackBar.open("Error occured, please try again.", "Close", { duration: 5000 })
+        }
+      )
+  }
+
+  public deleteSubject(subjectID: string) : void {
+    if(subjectID === '' || subjectID === null)
+      return
+
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + localStorage.getItem('nikprog-practiceapi-token')
+    })
+    this.http
+      .delete(
+        'https://practiceapi.nikprog.hu/Subject/' + subjectID,
+        { headers: headers }
+      )
+      .subscribe(
+        (success) => {
+          this.snackBar.open("Delete was successful!", "Close", { duration: 5000 })
         },
         (error) => {
           this.snackBar.open("Error occured, please try again.", "Close", { duration: 5000 })

@@ -62,3 +62,20 @@
 >    
     Update subject
 </button>
+
+<mat-divider></mat-divider>
+
+<mat-checkbox
+    [(ngModel)]="this.deleteDisabled"
+>
+    Delete disabled
+</mat-checkbox>
+
+<button
+    mat-flat-button
+    color="warn"
+    [disabled]="this.deleteDisabled"
+    (click)="deleteSubject(this.subject.id)"
+>    
+    Delete subject
+</button>
