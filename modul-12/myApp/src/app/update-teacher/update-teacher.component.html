@@ -1,1 +1,67 @@
-<p>update-teacher works!</p>
+<h1>Update teacher</h1>
+
+<mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput
+        [(ngModel)]="this.teacher.name">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Name of the teacher</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Neptun code</mat-label>
+    <input matInput
+        [(ngModel)]="this.teacher.neptun">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Neptun code of the teacher</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>ID</mat-label>
+    <input matInput
+        disabled
+        [(ngModel)]="this.teacher.id">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>ID of the teacher</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Image</mat-label>
+    <input matInput
+        [(ngModel)]="this.teacher.image">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Image link of the teacher</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+    <mat-label>Birth year</mat-label>
+    <input matInput
+        [(ngModel)]="this.teacher.birthYear">
+    <mat-icon matSuffix>text_fields</mat-icon>
+    <mat-hint>Birth year of the teacher</mat-hint>
+</mat-form-field>
+
+<button
+    mat-flat-button
+    color="accent"
+    (click)="updateTeacher()"
+>    
+    Update teacher
+</button>
+
+<mat-divider></mat-divider>
+
+<mat-checkbox
+    [(ngModel)]="this.deleteDisabled"
+>
+    Delete disabled
+</mat-checkbox>
+
+<button
+    mat-flat-button
+    color="warn"
+    [disabled]="this.deleteDisabled"
+    (click)="deleteTeacher(this.teacher.id)"
+>    
+    Delete teacher
+</button>

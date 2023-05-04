@@ -10,7 +10,6 @@
     </mat-card-header>
     <mat-card-content>
         <mat-divider></mat-divider>
-        <p>Teached subjects</p>
         <div *ngIf="teacher.teachedSubjects.length > 0; else noElementsToDisplay">
             <button
                 mat-stroked-button
@@ -25,6 +24,14 @@
         </ng-template>
         <mat-divider></mat-divider>
         <p class="teacher-id">{{ teacher.id }}</p>
+        <mat-divider></mat-divider>
+        <button
+            mat-stroked-button
+            [routerLink]="['/update-teacher/', teacher.id]"
+        >
+            <mat-icon aria-hidden="false" aria-label="Edit icon" fontIcon="edit"></mat-icon>
+            Edit
+        </button>
     </mat-card-content>
 </mat-card>
 
