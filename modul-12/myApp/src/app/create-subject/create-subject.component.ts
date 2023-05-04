@@ -11,9 +11,9 @@ import { Subject } from '../_models/subject';
 export class CreateSubjectComponent {
   http: HttpClient
   subject: Subject
-  snackBar:MatSnackBar
+  snackBar: MatSnackBar
 
-  constructor(http: HttpClient, snackBar:MatSnackBar) {
+  constructor(http: HttpClient, snackBar: MatSnackBar) {
     this.http = http
     this.subject = new Subject()
     this.snackBar = snackBar
@@ -32,10 +32,10 @@ export class CreateSubjectComponent {
       )
       .subscribe(
         (success) => {
-          this.snackBar.open("Create was successful!", "Close", { duration: 5000 })
+          this.snackBar.open('Create was successful!', 'Close', { duration: 5000 })
         },
         (error) => {
-          this.snackBar.open("Error occured, please try again.", "Close", { duration: 5000 })
+          this.snackBar.open('Error occured, please try again.', 'Close', { duration: 5000 })
         }
       )
   }

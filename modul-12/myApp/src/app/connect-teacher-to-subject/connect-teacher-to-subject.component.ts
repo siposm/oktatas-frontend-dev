@@ -12,7 +12,7 @@ import { Teacher } from '../_models/teacher';
 export class ConnectTeacherToSubjectComponent implements OnInit {
   
   http: HttpClient
-  snackBar:MatSnackBar
+  snackBar: MatSnackBar
   subjects: Array<Subject>
   teachers: Array<Teacher>
   selectedTeacherIdToRemove: string
@@ -20,7 +20,7 @@ export class ConnectTeacherToSubjectComponent implements OnInit {
   selectedTeacherIdToAdd: string
   selectedSubjectIdToAdd: string
 
-  constructor(http: HttpClient, snackBar:MatSnackBar) {
+  constructor(http: HttpClient, snackBar: MatSnackBar) {
     this.http = http
     this.snackBar = snackBar
     this.teachers = []
@@ -81,10 +81,10 @@ export class ConnectTeacherToSubjectComponent implements OnInit {
       )
       .subscribe(
         (success) => {
-          this.snackBar.open("Adding was successful!", "Close", { duration: 5000 })
+          this.snackBar.open('Adding was successful!', 'Close', { duration: 5000 })
         },
         (error) => {
-          this.snackBar.open("Error occured, please try again.", "Close", { duration: 5000 })
+          this.snackBar.open('Error occured, please try again.', 'Close', { duration: 5000 })
         }
       )
   }
@@ -106,10 +106,10 @@ export class ConnectTeacherToSubjectComponent implements OnInit {
       )
       .subscribe(
         (success) => {
-          this.snackBar.open("Removing was successful!", "Close", { duration: 5000 })
+          this.snackBar.open('Removing was successful!', 'Close', { duration: 5000 })
         },
         (error) => {
-          this.snackBar.open("Error occured, please try again.", "Close", { duration: 5000 })
+          this.snackBar.open('Error occured, please try again.', 'Close', { duration: 5000 })
         }
       )
   }

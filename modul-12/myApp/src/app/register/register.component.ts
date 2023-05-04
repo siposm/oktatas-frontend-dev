@@ -19,7 +19,7 @@ export class RegisterComponent {
   registerModel: RegisterModel
   acceptTermsAndConditions: boolean
 
-  constructor(http:HttpClient, snackBar:MatSnackBar, router:Router) {
+  constructor(http: HttpClient, snackBar: MatSnackBar, router: Router) {
     this.snackBar = snackBar
     this.http = http
     this.router = router
@@ -37,18 +37,18 @@ export class RegisterComponent {
   }
 
   public sendRegisterCredentials() : void {
-    this.http.put("https://practiceapi.nikprog.hu/Auth", this.registerModel)
+    this.http.put('https://practiceapi.nikprog.hu/Auth', this.registerModel)
     .subscribe(
       (success) => {
         this.snackBar
-        .open("Registration was successful!", "Close", { duration: 5000 })
+        .open('Registration was successful!', 'Close', { duration: 5000 })
         .afterDismissed()
         .subscribe(() => {
-          this.router.navigate(['/home'])
+          this.router.navigate(['/login'])
         })
       },
       (error) => {
-        this.snackBar.open("An error happened, please ty again.", "Close", { duration: 5000 })
+        this.snackBar.open('An error happened, please ty again.', 'Close', { duration: 5000 })
       })
   }
 }

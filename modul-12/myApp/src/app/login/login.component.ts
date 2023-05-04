@@ -19,7 +19,7 @@ export class LoginComponent {
   snackBar: MatSnackBar
   loginModel: LoginModel
 
-  constructor(http:HttpClient, snackBar:MatSnackBar, router:Router) {
+  constructor(http: HttpClient, snackBar: MatSnackBar, router: Router) {
     this.snackBar = snackBar
     this.http = http
     this.router = router
@@ -37,7 +37,7 @@ export class LoginComponent {
 
   public sendLoginCredentials() : void {
     this.http
-    .post<TokenModel>("https://practiceapi.nikprog.hu/Auth", this.loginModel)
+    .post<TokenModel>('https://practiceapi.nikprog.hu/Auth', this.loginModel)
     .subscribe(
       (success) => {
         localStorage.setItem('nikprog-practiceapi-token', success.token)
@@ -47,7 +47,7 @@ export class LoginComponent {
       },
       (error) => {
         console.log(error)
-        this.snackBar.open(error.message, "Close", { duration: 5000 })
+        this.snackBar.open(error.message, 'Close', { duration: 5000 })
       })
   }
 

@@ -17,7 +17,7 @@ export class ApiService {
         return token !== null
     }
 
-    canActivate() : boolean {
+    public canActivate() : boolean {
         if (!this.isLoggedIn()) {
             this.router.navigate(['/login'])
             return false

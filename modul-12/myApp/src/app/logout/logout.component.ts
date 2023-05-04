@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class LogoutComponent implements OnInit {
 
-  router:Router
+  router: Router
 
-  constructor(router:Router) {
+  constructor(router: Router) {
     this.router = router
   }
 

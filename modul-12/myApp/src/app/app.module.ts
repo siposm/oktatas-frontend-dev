@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { HttpClientModule } from '@angular/common/http';
 
 // MATERIAL RELATED STUFF
@@ -21,7 +19,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
-
 
 // COMPONENTS
 import { NavigationComponent } from './navigation/navigation.component';
@@ -70,10 +67,8 @@ import { ConnectTeacherToSubjectComponent } from './connect-teacher-to-subject/c
     MatSnackBarModule,
     MatCheckboxModule,
     MatSelectModule,
-
     MatMenuModule,
     MatButtonModule,
-
     HttpClientModule
   ],
   providers: [],

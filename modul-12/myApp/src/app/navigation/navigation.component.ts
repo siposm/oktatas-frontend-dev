@@ -10,7 +10,7 @@ export class NavigationComponent {
   
   api:ApiService
 
-  constructor(api:ApiService) {
+  constructor(api: ApiService) {
     this.api = api
   }
 }

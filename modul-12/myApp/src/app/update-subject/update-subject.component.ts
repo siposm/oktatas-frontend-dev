@@ -17,7 +17,7 @@ export class UpdateSubjectComponent implements OnInit {
   snackBar: MatSnackBar
   deleteDisabled: boolean
 
-  constructor(http: HttpClient, route:ActivatedRoute, snackBar:MatSnackBar) {
+  constructor(http: HttpClient, route: ActivatedRoute, snackBar: MatSnackBar) {
     this.http = http
     this.route = route
     this.subject = new Subject()
@@ -61,10 +61,10 @@ export class UpdateSubjectComponent implements OnInit {
       )
       .subscribe(
         (success) => {
-          this.snackBar.open("Update was successful!", "Close", { duration: 5000 })
+          this.snackBar.open('Update was successful!', 'Close', { duration: 5000 })
         },
         (error) => {
-          this.snackBar.open("Error occured, please try again.", "Close", { duration: 5000 })
+          this.snackBar.open('Error occured, please try again.', 'Close', { duration: 5000 })
         }
       )
   }
@@ -84,10 +84,10 @@ export class UpdateSubjectComponent implements OnInit {
       )
       .subscribe(
         (success) => {
-          this.snackBar.open("Delete was successful!", "Close", { duration: 5000 })
+          this.snackBar.open('Delete was successful!', 'Close', { duration: 5000 })
         },
         (error) => {
-          this.snackBar.open("Error occured, please try again.", "Close", { duration: 5000 })
+          this.snackBar.open('Error occured, please try again.', 'Close', { duration: 5000 })
         }
       )
   }
