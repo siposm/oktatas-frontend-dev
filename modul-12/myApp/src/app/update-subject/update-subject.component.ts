@@ -1,5 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute } from '@angular/router';
 import { Subject } from '../_models/subject';
@@ -9,7 +9,7 @@ import { Subject } from '../_models/subject';
   templateUrl: './update-subject.component.html',
   styleUrls: ['./update-subject.component.scss']
 })
-export class UpdateSubjectComponent {
+export class UpdateSubjectComponent implements OnInit {
 
   http: HttpClient
   route: ActivatedRoute
