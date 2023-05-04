@@ -472,6 +472,9 @@ Kulcsszavak:
   `DELETE`
   `scss`
   `Sass CSS`
+  `ActivatedRoute`
+  `filter`
+  `map`
 
 
 <br>
