@@ -41,6 +41,12 @@ Készítsen egy kliensoldali programot Angular keretrendszer, valamint a hozzá 
     - a tanárok adatait card-ok segítségével jelenítse meg az alábbiak szerint
     - a card-okat több féle módon fel lehet használni, valásszon egy kedvére valót
     - ezen helyezze el a tanár nevét és neptunkódját, valamint a profilképét, majd alatta listaként jelenjenek meg a tárgyak (név, neptunkód és kredit érték elrendezésben)
+- **tanár módosítása**
+    - adott tanárhoz tartozó adatokat lehessen módosítani input mezők segítségével
+    - a tanárok card-jain helyezzen el alul egy sárga gombot "Módosítás" felirattal, amelyet megnyomva, a card-ok fölött jelenjen egy világászöld rész, amelyben input mezőkön keresztül lehessen módosítani az adott tanár tulajdonságait
+    - a zöld részben az input mezők alatt jelenjen meg két gomb; egy "Mentés" és egy "Elvetés" feliratú
+        - mentés esetén hívja meg a megfelelő backend végpontot
+        - elvetés esetén dobja el a módosításokat
 - **tanár létrehozása**
     - hozzon létre mindennek megfelelő input mezőket, alkalmazzon adatkötést majd egy gomb megnyomását követően hívja meg a megfelelő végpontot
     - akár hiba, akár sikeres művelet esetén minimum console.log-on keresztül adjon visszajelzést
