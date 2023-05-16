@@ -56,3 +56,12 @@ Készítsen egy kliensoldali programot Angular keretrendszer, valamint a hozzá 
     - adott tárgy neptun kódja [chips](https://material.angular.io/components/chips/overview) segítségével jelenjen meg
     - a többi tárgyhoz tartozó adat egymás alatt [divider](https://material.angular.io/components/divider/overview8)-ekkel elválasztva jelenjen meg
     - hozzon létre egy gombot a card alján, amelyre kattintva a tárgy ID-ja íródjon ki egy sima alert ablakban (`alert('xy')`)
+- **tárgyak szűrése**
+    - hozzon létre a tárgyak listázása felett egy világossárga hátterű részt, amelyben legyen kettő darab [legördülő lista](https://material.angular.io/components/select/overview) és egy "Filter" feliratú gomb
+    - a két legördülő listából lehessen tárgyak kreditértékét kiválasztani, majd a gomb megnyomásának hatására a két inputban megadott értékek között lévő tárgyakat szűrje le
+    - tehát pl. a minimum értéknek megadjuk, hogy 3, míg a maximum értéknek megadjuk, hogy 6; ekkor csak a két érték közötti kreditértékű tárgyakat kellene látnunk (tehát amiknek a kreditértéke 3 vagy 4 vagy 5 vagy 6)
+    - a legördülő listákat úgy készítse el, hogy a minimum és a maximum választható érték az aktuálisan a rendszerben lévő tárgyak alapján legyen meghatározva, közte pedig egyesével legyen minden érték
+        - példa:
+            - a max kreditérték a rendszerben található tárgyaknál: 11
+            - a min kreditérték a rendszerben található tárgyaknál: 2
+            - akkor a generált értékek a legördülő listában: 2-3-4-5-6-7-8-9-10-11
