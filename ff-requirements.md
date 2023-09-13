@@ -1,6 +1,6 @@
 # Féléves Feladat Követelmények
 
-    Kliensoldali Fejlesztés • 2023 tavaszi félév • Sipos Miklós
+    Kliensoldali Fejlesztés • 2024 őszi félév • Sipos Miklós
 
 <br>
 <br>
@@ -62,13 +62,13 @@ A féléves feladatban az alábbi elvárásokat kötelező megvalósítani a leg
 | Elvárás | Pont |
 | - | - |
 | Vue vagy Angular segítségével készül el | 1 |
-| használjon valamilyen CSS keretrendszert (pl. Bootstrap vagy Angular Material) | 1 |
+| használjon valamilyen tanult CSS keretrendszert (Bootstrap vagy Angular Material) | 1 |
 | backend oldalról API végpontokkal kommunikál | 1 |
-| legalább 7 komponenst használ | 1 |
+| legalább 9 komponenst használ | 1 |
 | lehessen CRUD műveleteket végezni az entitások mindegyikén, valamint rendelkezzen komplexebb adatok megjelenítésével is (pl. non-CRUD műveletek eredményei) | 1 |
 | legyen regisztráció és bejelentkezési funkció | 1 |
 | tartalmazzon validációt az input mezőkre | 1 |
-| használjon token alapú authentikációt | 1 |
+| használjon JWT token alapú authentikációt | 1 |
 | pár kiemelt tartalomra / elemre készítsen saját CSS-t amely esztétikus és az alkalmazáshoz illeszkedik | 1 |
 | GitHub-on vezetve, feature-branch alapú fejlesztést követve készül el, minimum 40 commit-on keresztül | 1 |
 
@@ -125,5 +125,5 @@ A kötelező elemeken túl opcionálisan megvalósítható funkciókkal plusz po
 - A félélves feladatot GitHub-on, a neki megfelelő repository-ban kell vezetni. Ehhez mindenkinek létrehozok egy repository-t és a GitHub userét hozzáadom. Ezen repository-kat [itt találjátok](https://github.com/frontend-dev-siposm) (mindenki csak a sajátját látja).
 - A félév folyamán a kódot fokozatosan kell fejleszteni, commitolni.
 - Az elvárt minimum commit szám: 40
-- Multibranch használta szükséges, melyben `feature/xy` alapon kell létrehozni a brancheket. A branch-ek ne legyenek törölve a mergelések után.
-- A leadáskor minden működő kód a `master branch`-be legyen bemergelve.
+- GitFlow használata szükséges, melyben `feature/my-new-feature` elnevezési konvenció alapján kell létrehozni a `feature` brancheket, leágazva a `develop` branch-ből. A branch-ek ne legyenek törölve a mergelések után.
+- A leadáskor minden működő kód a `master` branch-be legyen bemergelve.
