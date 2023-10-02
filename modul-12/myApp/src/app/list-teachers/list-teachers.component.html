@@ -10,10 +10,10 @@
     </mat-card-header>
     <mat-card-content>
         <mat-divider></mat-divider>
-        <div *ngIf="teacher.teachedSubjects.length > 0; else noElementsToDisplay">
+        <div *ngIf="teacher.taughtSubjects.length > 0; else noElementsToDisplay">
             <button
                 mat-stroked-button
-                *ngFor="let subject of teacher.teachedSubjects"
+                *ngFor="let subject of teacher.taughtSubjects"
                 [routerLink]="['/update-subject/', subject.id]"
             >
                 {{ subject.name }} - {{ subject.neptun }} - ({{ subject.credit }})

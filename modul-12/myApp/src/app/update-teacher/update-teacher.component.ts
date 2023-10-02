@@ -39,7 +39,7 @@ export class UpdateTeacherComponent implements OnInit {
           this.teacher.birthYear = x.birthYear
           this.teacher.image = x.image
           this.teacher.creatorName = x.creatorName
-          // this.teacher.teachedSubjects = x.teachedSubjects
+          // this.teacher.taughtSubjects = x.taughtSubjects
           // --> not needed for PUT or DELETE
         })
         

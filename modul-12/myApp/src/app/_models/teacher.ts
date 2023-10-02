@@ -7,7 +7,7 @@ export class Teacher {
     birthYear: number = 0
     image: string = ''
     creatorName: string = ''
-    teachedSubjects: Array<Subject> = []
+    taughtSubjects: Array<Subject> = []
 
     public createSubjects(subjectList: Array<any>) {
         subjectList.map((x:any) => {
@@ -20,7 +20,7 @@ export class Teacher {
             subject.image = x.image
             subject.creatorName = x.creatorName
             subject.registeredStudents = x.registeredStudents
-            this.teachedSubjects.push(subject)
+            this.taughtSubjects.push(subject)
         })
     }
 }

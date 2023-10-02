@@ -28,7 +28,7 @@ export class ListTeachersComponent implements OnInit {
         t.birthYear = x.birthYear
         t.image = x.image
         t.creatorName = x.creatorName
-        t.createSubjects(x.teachedSubjects)
+        t.createSubjects(x.taughtSubjects)
         this.teachers.push(t)
       })
       console.log(this.teachers)
