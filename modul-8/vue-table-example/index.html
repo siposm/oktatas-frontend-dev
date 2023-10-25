@@ -28,6 +28,7 @@
                 <th>ID</th>
                 <th>Birth year</th>
             </tr>
+            <!-- https://v2.vuejs.org/v2/guide/components.html#DOM-Template-Parsing-Caveats -->
             <template v-for="student in students">
                 <tr
                     is="vue:student-item"
