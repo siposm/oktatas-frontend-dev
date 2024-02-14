@@ -1,6 +1,6 @@
 # Féléves Feladat Követelmények
 
-    Kliensoldali Fejlesztés • 2024 őszi félév • Sipos Miklós
+    Kliensoldali Fejlesztés • 2023-2024-2 tavaszi félév • Sipos Miklós
 
 <br>
 <br>
