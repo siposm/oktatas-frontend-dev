@@ -80,13 +80,16 @@ A kötelező elemeken túl opcionálisan megvalósítható funkciókkal plusz po
 | - | - |
 | legyenek különböző funkciók implementálva, melyekhez használja fel a tömb metódusokat (map, filter, reduce stb.) | 1 |
 | valamilyen publikus felületen elérhető a kész alkalmazás | 1 |
+| használ valamilyen geolokációs megoldást | 1 |
+| olyan értesítési mechanizmust használ, amely segítségével a böngésző maga küld értesítést az alkalmazás használata alatt | 1 |
+| rendelkezik különböző interaktív grafikonokkal/diagrammokkal, amelyek dinamikusan változnak az adatok alapján (pl. D3.js, Chart.js) | 1 |
 | használ valamilyen saját algoritmust vagy adatszerkezetet (pl. gráf, back track search) | 1 |
 | teljesen reszponzív megjelenítéssel rendelkezik (telefon-tablet-desktop) | 1 |
-| rendelkezik social login belépési funkcióval (pl. Google, Facebook) | 1 |
+| rendelkezik 3rd party login belépési funkcióval (pl. Google, Facebook, Office 365) | 1 |
 | GitHub-on valamilyen CI/CD pipeline (GitHub actions) megoldást használ (pl. tesztek automatikus futtatása, webhook-ok hívása) <br> *Ehhez a repository beállításain állítanom kell. Ha valaki igényt tart erre, kérem jelezze külön.* | 1 |
 | használ valamilyen state management-et | 1 |
 | valamilyen egyéb CSS keretrendszert használ (pl. Tailwind) akár meglévővel kombinálva, akár kizárólagosan | 1 |
-| teszteli a frontend komponenseket, funkciókat | 1 |
+| programozott módon teszteli a frontend komponenseket, funkciókat | 1 |
 | valamilyen részét az alkalmazásnak valós időben mutatja SignalR segítségével | 1 |
 | GitHub-on Kanban board és ticket-ek (GitHub projects) alapján folyik a fejlesztés (vagy ennek megfelelő alternatívával pl. Jira board) | 1 |
 
