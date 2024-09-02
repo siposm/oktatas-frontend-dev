@@ -15,53 +15,57 @@ Készítsen egy kliensoldali programot Angular keretrendszer, valamint a hozzá 
 ## Elvárások, kikötések
 
 ### Backend API
+
 - backend API hívásokra az [itt található](https://practiceapi.nikprog.hu/swagger/index.html) végpontokat használja
 
 ### Egységes design
+
 - az oldalon az egységes design elérése érdekében [Angular Material UI](https://material.angular.io/)-t használjon
 
 ### Kódolási elvárások
+
 - a feladat megvalósítása során használjon több komponenst a megfelelő routing és routing védelmi beállításokkal, minimum az alábbiakat:
-    - bejelentkezés
-    - kijelentkezés
-    - regisztráció
-    - tanár listázás
-    - tanár létrehozás
-    - tárgy listázás
-    - hibaüzenet
+  - bejelentkezés
+  - kijelentkezés
+  - regisztráció
+  - tanár listázás
+  - tanár létrehozás
+  - tárgy listázás
+  - hibaüzenet
 
 ### Funkciók megvalósítása
+
 - **autentikáció**
-    - a rendszer ne rendelkezzen főoldallal, egyből a bejelentkezési felület jelenjen meg,amelyen alul legyen egy gomb, miszerint ha nincs még regisztrált fiókunk úgy lehessen létrehozni egyet és ehhez navigáljon át a regisztrációra
-    - a rendszerbe lehessen regisztrálni, majd regisztrációt követően lehessen bejelentkezni (és majdan kijelentkezni), az ezekhez szükséges komponenseket hozza létre
-    - autentikációhoz használjon JWT tokent, localstorage-ot és service-t
-    - bejelentkezett felhasználók esetében lehessen tanárokat listázni és létrehozni, valamint lehessen tárgyakat listázni, egyéb esetben a nem authentikált felhasználókat ne engedje be a rendszer ezen komponenseire és irányítsa át őket egy hibaüzenetre
-    - sikeres bejelentkezés esetén, a bejelentkezést követően ezeket a menüpontokat (tanár listázás, tárgy listázás, tanár létrehozás) lehessen elérni egy felső navigációs sávból
+  - a rendszer ne rendelkezzen főoldallal, egyből a bejelentkezési felület jelenjen meg,amelyen alul legyen egy gomb, miszerint ha nincs még regisztrált fiókunk úgy lehessen létrehozni egyet és ehhez navigáljon át a regisztrációra
+  - a rendszerbe lehessen regisztrálni, majd regisztrációt követően lehessen bejelentkezni (és majdan kijelentkezni), az ezekhez szükséges komponenseket hozza létre
+  - autentikációhoz használjon JWT tokent, localstorage-ot és service-t
+  - bejelentkezett felhasználók esetében lehessen tanárokat listázni és létrehozni, valamint lehessen tárgyakat listázni, egyéb esetben a nem authentikált felhasználókat ne engedje be a rendszer ezen komponenseire és irányítsa át őket egy hibaüzenetre
+  - sikeres bejelentkezés esetén, a bejelentkezést követően ezeket a menüpontokat (tanár listázás, tárgy listázás, tanár létrehozás) lehessen elérni egy felső navigációs sávból
 - **tanárok listázása**
-    - a tanárok adatait card-ok segítségével jelenítse meg az alábbiak szerint
-    - a card-okat több féle módon fel lehet használni, valásszon egy kedvére valót
-    - ezen helyezze el a tanár nevét és neptunkódját, valamint a profilképét, majd alatta listaként jelenjenek meg a tárgyak (név, neptunkód és kredit érték elrendezésben)
+  - a tanárok adatait card-ok segítségével jelenítse meg az alábbiak szerint
+  - a card-okat több féle módon fel lehet használni, valásszon egy kedvére valót
+  - ezen helyezze el a tanár nevét és neptunkódját, valamint a profilképét, majd alatta listaként jelenjenek meg a tárgyak (név, neptunkód és kredit érték elrendezésben)
 - **tanár módosítása**
-    - adott tanárhoz tartozó adatokat lehessen módosítani input mezők segítségével
-    - a tanárok card-jain helyezzen el alul egy sárga gombot "Módosítás" felirattal, amelyet megnyomva, a card-ok fölött jelenjen egy világászöld rész, amelyben input mezőkön keresztül lehessen módosítani az adott tanár tulajdonságait
-    - a zöld részben az input mezők alatt jelenjen meg két gomb; egy "Mentés" és egy "Elvetés" feliratú
-        - mentés esetén hívja meg a megfelelő backend végpontot
-        - elvetés esetén dobja el a módosításokat
+  - adott tanárhoz tartozó adatokat lehessen módosítani input mezők segítségével
+  - a tanárok card-jain helyezzen el alul egy sárga gombot "Módosítás" felirattal, amelyet megnyomva, a card-ok fölött jelenjen egy világászöld rész, amelyben input mezőkön keresztül lehessen módosítani az adott tanár tulajdonságait
+  - a zöld részben az input mezők alatt jelenjen meg két gomb; egy "Mentés" és egy "Elvetés" feliratú
+    - mentés esetén hívja meg a megfelelő backend végpontot
+    - elvetés esetén dobja el a módosításokat
 - **tanár létrehozása**
-    - hozzon létre mindennek megfelelő input mezőket, alkalmazzon adatkötést majd egy gomb megnyomását követően hívja meg a megfelelő végpontot
-    - akár hiba, akár sikeres művelet esetén minimum console.log-on keresztül adjon visszajelzést
+  - hozzon létre mindennek megfelelő input mezőket, alkalmazzon adatkötést majd egy gomb megnyomását követően hívja meg a megfelelő végpontot
+  - akár hiba, akár sikeres művelet esetén minimum console.log-on keresztül adjon visszajelzést
 - **tárgyak listázása**
-    - a tárgyak adatait card-ok segítségével jelenítse meg, az alábbiak szerint
-    - adott tárgy kredit értéke a tárgy neve mellett [badge](https://material.angular.io/components/badge/overview) segítségével jelenjen meg
-    - adott tárgy neptun kódja [chips](https://material.angular.io/components/chips/overview) segítségével jelenjen meg
-    - a többi tárgyhoz tartozó adat egymás alatt [divider](https://material.angular.io/components/divider/overview8)-ekkel elválasztva jelenjen meg
-    - hozzon létre egy gombot a card alján, amelyre kattintva a tárgy ID-ja íródjon ki egy sima alert ablakban (`alert('xy')`)
+  - a tárgyak adatait card-ok segítségével jelenítse meg, az alábbiak szerint
+  - adott tárgy kredit értéke a tárgy neve mellett [badge](https://material.angular.io/components/badge/overview) segítségével jelenjen meg
+  - adott tárgy neptun kódja [chips](https://material.angular.io/components/chips/overview) segítségével jelenjen meg
+  - a többi tárgyhoz tartozó adat egymás alatt [divider](https://material.angular.io/components/divider/overview8)-ekkel elválasztva jelenjen meg
+  - hozzon létre egy gombot a card alján, amelyre kattintva a tárgy ID-ja íródjon ki egy sima alert ablakban (`alert('xy')`)
 - **tárgyak szűrése**
-    - hozzon létre a tárgyak listázása felett egy világossárga hátterű részt, amelyben legyen kettő darab [legördülő lista](https://material.angular.io/components/select/overview) és egy "Filter" feliratú gomb
-    - a két legördülő listából lehessen tárgyak kreditértékét kiválasztani, majd a gomb megnyomásának hatására a két inputban megadott értékek között lévő tárgyakat szűrje le
-    - tehát pl. a minimum értéknek megadjuk, hogy 3, míg a maximum értéknek megadjuk, hogy 6; ekkor csak a két érték közötti kreditértékű tárgyakat kellene látnunk (tehát amiknek a kreditértéke 3 vagy 4 vagy 5 vagy 6)
-    - a legördülő listákat úgy készítse el, hogy a minimum és a maximum választható érték az aktuálisan a rendszerben lévő tárgyak alapján legyen meghatározva, közte pedig egyesével legyen minden érték
-        - példa:
-            - a max kreditérték a rendszerben található tárgyaknál: 11
-            - a min kreditérték a rendszerben található tárgyaknál: 2
-            - akkor a generált értékek a legördülő listában: 2-3-4-5-6-7-8-9-10-11
+  - hozzon létre a tárgyak listázása felett egy világossárga hátterű részt, amelyben legyen kettő darab [legördülő lista](https://material.angular.io/components/select/overview) és egy "Filter" feliratú gomb
+  - a két legördülő listából lehessen tárgyak kreditértékét kiválasztani, majd a gomb megnyomásának hatására a két inputban megadott értékek között lévő tárgyakat szűrje le
+  - tehát pl. a minimum értéknek megadjuk, hogy 3, míg a maximum értéknek megadjuk, hogy 6; ekkor csak a két érték közötti kreditértékű tárgyakat kellene látnunk (tehát amiknek a kreditértéke 3 vagy 4 vagy 5 vagy 6)
+  - a legördülő listákat úgy készítse el, hogy a minimum és a maximum választható érték az aktuálisan a rendszerben lévő tárgyak alapján legyen meghatározva, közte pedig egyesével legyen minden érték
+    - példa:
+      - a max kreditérték a rendszerben található tárgyaknál: 11
+      - a min kreditérték a rendszerben található tárgyaknál: 2
+      - akkor a generált értékek a legördülő listában: 2-3-4-5-6-7-8-9-10-11

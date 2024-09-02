@@ -1,8 +1,10 @@
 ### Követelmények
-https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes/
+
+<https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes/>
 
 ### Tárgy weboldala
-https://nik.siposm.hu/kf
+
+<https://nik.siposm.hu/kf>
 
 <br>
 <br>
@@ -155,12 +157,12 @@ Kulcsszavak:
   `classList`
   `event bubbling`
   `event capturing`
-    
+
 <br>
 <br>
 <br>
 
-### Modul 5: JavaScript haladó ismeretek I.
+### Modul 5: JavaScript haladó ismeretek I
 
 További JS nyelvi elemek és adatszerkezetek használata. Web APIk és a BOM megismerése. Kódszervezés modulba rendezett file-ok segítségével. Egységbezárás osztályok esetén és a this kulcsszó vonatkozása. Adat helyének meghatározása, illetve az adat leképezése generáláson keresztül. Imperatív és deklaratív felhasználói felület kezelése. Progresszív webalkalmazás (weboldal vs webalkalmazás) fejlesztésének bemutatása, a GD és PE koncepciókon keresztül.
 
@@ -200,12 +202,12 @@ Kulcsszavak:
   `dark mode`
   `render`
   `this`
-    
+
 <br>
 <br>
 <br>
 
-### Modul 6: JavaScript haladó ismeretek II.
+### Modul 6: JavaScript haladó ismeretek II
 
 Haladó ismeretek bővítése az alábbi fogalmak megismerésével: callback függvény, promise-ok létrehozása és kezelése, az async-await páros felhasználása. A CORS jelenség bemutatása. Beépített tömb metódusok megismerése és használata. Komplex feladat megoldása backend API hívásokkal (Fetch API-t és Promise-okat felhasználva), melyeken keresztül lehet hallgatókat listázni, új hallgatót felvenni, meglévő hallgatót módosítani.
 
@@ -246,7 +248,7 @@ Kulcsszavak:
 <br>
 <br>
 
-### Modul 7: JavaScript haladó ismeretek III.
+### Modul 7: JavaScript haladó ismeretek III
 
 Haladó ismeretek bővítése a JS működési hátterének megismerésével. JS Engine és Runtime fogalmak megismerése és a hozzájuk szorosan kapcsolódó további fogalmak (compilation, interpretation, JIT, AST, event loop, execution context, call stack, scope chain, hositing, TDZ). Valódi párhuzamosságra alkalmas módszer megismerése. Az AJAX technológia és annak jelentőségének megismerése.
 
@@ -291,22 +293,40 @@ Kulcsszavak:
 <br>
 <br>
 
-### Modul 8: JS Keretrendszerek, Vue alapok
+### Modul 8: Programozás TypeScript-ben
 
-A JavaScript keretrendszerek és library közötti különbség bemutatása. A jQuery megismerése, történelmi áttekintése. A JavaScript aktuális helyzete a piacon (state of JS). Template engine-k és a virtual DOM jelentőségének bemutatása a modern keretrendszerek esetén. A Vue keretrendszer bemutatása (felhasználása vue cli, illetve CDN-en keresztül), strukturális felépítése, vue2 és vue3 közötti különbségek ismertetése. Gyakorlati alkalmazás létrehozása Vue segítségével (adatkötés és API kezelés bemutatása), a vue lifecycle megismerésével. Komplex gyakorlati alkalmazás létrehozása komponens alapú fejlesztéssel.
+A TypeScript nyelv megismerése, alapvető példák bemutatása. Komplexebb, rétegzett alkalmazás készítése TS-ben.
 
 ```
   8.01 Bevezető
+  8.0x todo
+  8.0x todo
+  8.0x todo
+```
+
+Kulcsszavak:
+  `todo`
+  `todo`
+  `todo`
+
+<br>
+<br>
+<br>
+
+### Modul 9: JS keretrendszerek, Angular alapismeretek
+
+A JavaScript keretrendszerek és library közötti különbség bemutatása. A jQuery megismerése, történelmi áttekintése. A JavaScript aktuális helyzete a piacon (state of JS). Template engine-k és a virtual DOM jelentőségének bemutatása a modern keretrendszerek esetén. A tech stack fogalmának megismerése és az elterjedt alternatívák vizsgálata. Angular projekt létrehozására szolgáló opciók megismerése. Angular projekt futtatása, Angular CLI-on keresztül (ng serve), vagy NPM-en keresztül (npm start). Angular alkalmazás fájlstruktúrájának megismerése, valamint az alapvető nyelvi elemek megismerése (ciklus, if, adatkötés, típusosság).
+
+```
+  9.01 Bevezető
   8.02 Framework vs library
   8.03 Template engine
   8.04 Virtual DOM
   8.05 State of JS
-  8.06 Vue elméleti alapok
-  8.07 Vue gyakorlati alapok (CDN, CLI, strukturális felépítés, adatkötés)
-  8.08 Vue gyakorlati alapok (API kezelés, lifecycle)
-  8.09 Feladatmegoldás: adatbeolvasás és megjelenítés
-  8.10 Feladatmegoldás: új elem létrehozása
-  8.11 Feladatmegoldás: komponens alapú refaktorálás
+  9.02 Tech stack
+  9.05 Angular (projekt létrehozás (node, npm))
+  9.06 Angular (alkalmazás futtatás (node, ng))
+  9.07 Angular alapvető nyelvi elemek megismerése
 ```
 
 Kulcsszavak:
@@ -316,32 +336,6 @@ Kulcsszavak:
   `vue`
   `virtual DOM`
   `data binding`
-  `v-model`
-  `v-for`
-  `.vue`
-  `component`
-  `computed`
-  `property`
-
-<br>
-<br>
-<br>
-
-### Modul 9: TypeScript, Angular alapok
-
-A tech stack fogalmának megismerése és az elterjedt alternatívák vizsgálata. A TypeScript nyelv megismerése, alapvető példák bemutatása. Angular projekt létrehozására szolgáló opciók megismerése. Angular projekt futtatása, Angular CLI-on keresztül (ng serve), vagy NPM-en keresztül (npm start). Angular alkalmazás fájlstruktúrájának megismerése, valamint az alapvető nyelvi elemek megismerése (ciklus, if, adatkötés, típusosság).
-
-```
-  9.01 Bevezető
-  9.02 Tech stack
-  9.03 TypeScript elmélet
-  9.04 TypeScript gyakorlat
-  9.05 Angular (projekt létrehozás (node, npm))
-  9.06 Angular (alkalmazás futtatás (node, ng))
-  9.07 Angular alapvető nyelvi elemek megismerése
-```
-
-Kulcsszavak:
   `tech stack`
   `JAM`
   `MEAN`
@@ -381,12 +375,11 @@ Kulcsszavak:
   `FormsModule`
   `app.module.ts`
 
-
 <br>
 <br>
 <br>
 
-### Modul 11: Angular haladó ismeretek I.
+### Modul 11: Angular haladó ismeretek I
 
 Több komponensből felépülő, User és Comment kezelő CRUD alkalmazás készítése Angular keretrendszerben. Routing felhasználás a navigációban. Komponensek közötti kommunikáció, adattovábbítás. Bootstrap elemek felhasználása.
 
@@ -419,12 +412,11 @@ Kulcsszavak:
   `scss`
   `Sass CSS`
 
-
 <br>
 <br>
 <br>
 
-### Modul 12: Angular haladó ismeretek II.
+### Modul 12: Angular haladó ismeretek II
 
 Több komponensből felépülő, Teacher és Subject (valamint a köztük található reláció) kezelő CRUD alkalmazás készítése Angular keretrendszerben. Routing felhasználás a navigációban. Auth guard alkalmazása (csak authentikált felhasználók számára elérhető komponensek). Komponensek közötti kommunikáció, adattovábbítás. Angular Material UI és annak komponenseinek felhasználása. Regisztráció és bejelentkezés implementálása JWT token és localstorage segítségével.
 
@@ -476,8 +468,6 @@ Kulcsszavak:
   `filter`
   `map`
 
-
 <br>
 <br>
 <br>
-
