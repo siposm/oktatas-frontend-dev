@@ -1,6 +1,6 @@
 # Házi feladat 01
 
-    Sipos Miklós - 2024 - Kliensoldali fejlesztés
+    Sipos Miklós • Kliensoldali fejlesztés
 
 ## Statikus weboldalak létrehozása
 
