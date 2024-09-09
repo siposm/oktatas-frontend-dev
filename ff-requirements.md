@@ -37,8 +37,8 @@
 
 ### Technológiák felhasználása
 
-- A féléves feladatban a felhasználni kívánt technológia az alábbiakból választható: Vue vagy Angular, illetve CSS keretrendszerben Bootstrap vagy Angular Material (lásd bővebben az [Elvárások](#elvárások) fejezetet).
-- Továbbá használható minden olyan eszköz, keretrendszer, library melyeket az órák során érintettünk (pl. FontAwesome, CSS generátorok (box shadow, gradient, coolors stb.)).
+- A féléves feladatot Angular keretrendszerben kell megoldani. UI szempontjából Bootstrap CSS keretrendszer  vagy Angular Material használható.
+- Továbbá, használható minden olyan eszköz, keretrendszer, library melyeket az órák során érintettünk (pl. FontAwesome, Bootstrap Icons, CSS generátorok (grid, box shadow, gradient, coolors stb.)).
 - Külső (a tananyagok alatt nem érintett) eszköz felhasználása esetén előzetes egyeztetés szükséges. Ennek oka, hogy a féléves feladatok nagyjából azonos szintűek legyenek, és külső egyéb eszközök felhasználása esetén ezt nehéz kordában tartani.
 
 <br>
@@ -47,10 +47,7 @@
 
 ### Beadási határidő
 
-- Mérnökinformatikus képzés esetén:
-  - A féléves feladatokat a vizsgaidőszakban, a vizsgát megelőző nap délig lehet frissíteni. Azt követően új kód nem kerülhet a repository-ba.
-- Üzemmérnök-informatikus képzés esetén:
-  - A féléves feladatokat a 14. héten a labor idejében kell bemutatni. A kódokat aznap reggel 8:00-ig lehet frissíteni, ezt követően új kód nem kerülhet a repository-ba.
+- A féléves feladatokat a vizsgaidőszakban, a vizsgát megelőző nap délig lehet frissíteni. Azt követően új kód nem kerülhet a repository-ba.
 - A határidőkre minden működő kód a `master branch`-be legyen bemergelve.
 
 <br>
