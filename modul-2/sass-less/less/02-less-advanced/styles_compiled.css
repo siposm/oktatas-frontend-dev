@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #007bff;
+  background-color: #f8f9fa;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 5px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+header {
+  background-color: #6c757d;
+  padding: 20px;
+}
+header h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 16px;
+  color: white;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+.btn.primary:hover {
+  background-color: #0062cc;
+}
+.btn.success {
+  background-color: #28a745;
+  color: white;
+}
+.btn.success:hover {
+  background-color: #1e7e34;
+}
+.btn.error {
+  background-color: #dc3545;
+  color: white;
+}
+.btn.error:hover {
+  background-color: #bd2130;
+}
+.btn:active {
+  position: relative;
+  top: 2px;
+}

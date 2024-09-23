@@ -1,0 +1,27 @@
+// Flexbox mixin
+.flexbox() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// Box shadow mixin
+.box-shadow(@x: 0, @y: 0, @blur: 5px, @color: rgba(0, 0, 0, 0.5)) {
+    box-shadow: @x @y @blur @color;
+}
+
+// Gradient mixin
+.gradient(@start-color, @end-color) {
+    background: linear-gradient(to bottom, @start-color, @end-color);
+}
+
+// Rounded corner mixin
+.rounded-corners(@radius: 5px) {
+    border-radius: @radius;
+}
+
+// Border color mixin
+.border-color(@color: red, @size: 1px) {
+    border: @size solid @color;
+}

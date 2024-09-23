@@ -1,0 +1,12 @@
+// Media styles
+@media (max-width: $screen-md)
+    body
+        background-color: $desktop-background-color
+
+@media (max-width: $screen-sm)
+    body
+        background-color: $mobile-background-color
+    .container
+        @include flexbox
+        > * // apply styles to ALL CHILD elements!
+            margin-bottom: $margin-size-lg

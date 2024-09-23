@@ -1,0 +1,37 @@
+body {
+  background-color: #76b8ff;
+  color: #474849;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 5px solid white;
+  -webkit-box-shadow: 5px 5px 22px -8px rgb(122, 116, 122);
+  -moz-box-shadow: 5px 5px 22px -8px rgb(122, 116, 122);
+  box-shadow: 5px 5px 22px -8px rgb(122, 116, 122);
+}
+
+.btn, .btn-error, .btn-success {
+  background-color: #474849;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles_compiled.css.map */

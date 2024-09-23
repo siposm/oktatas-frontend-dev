@@ -1,0 +1,59 @@
+// Define variables
+@primary-color: #76b8ff;
+@secondary-color: #474849;
+@margin-size-sm: 5px;
+@margin-size-md: 10px;
+@margin-size-lg: 20px;
+
+// Define mixins
+.rounded-corners(@radius: 5px) {
+    border-radius: @radius;
+}
+
+.border-color(@color: red) {
+    border: 5px solid @color;
+}
+
+.drop-shadow() {
+    -webkit-box-shadow: 5px 5px 22px -8px rgba(122,116,122,1);
+    -moz-box-shadow: 5px 5px 22px -8px rgba(122,116,122,1);
+    box-shadow: 5px 5px 22px -8px rgba(122,116,122,1);
+}
+
+// Define styles
+body {
+    background-color: @primary-color;
+    color: @secondary-color;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: @margin-size-lg;
+    margin-top: @margin-size-lg;
+    padding: 20px;
+    .rounded-corners;
+    .border-color(white);
+    .drop-shadow();
+}
+
+.btn {
+    background-color: @secondary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: @margin-size-sm;
+    .rounded-corners(3px);
+}
+
+// Extend existing styles
+.btn-success {
+    .btn;
+    background-color: green;
+}
+
+.btn-error {
+    .btn;
+    background-color: red;
+}

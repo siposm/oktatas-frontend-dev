@@ -1,0 +1,80 @@
+// Import variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Global styles
+body {
+    font-family: Arial, sans-serif;
+    font-size: @font-size-base;
+    color: @primary-color;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: @margin-size-lg;
+    margin-top: @margin-size-lg;
+    padding: 20px;
+    .rounded-corners;
+    .border-color(white);
+    .box-shadow();
+}
+
+
+// Header styles
+header {
+    background-color: @secondary-color;
+    padding: 20px;
+
+    h1 {
+        font-size: @font-size-lg;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: @font-size-base;
+        color: white;
+    }
+}
+
+// Button styles
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    .rounded-corners();
+
+    &.primary {
+        background-color: @primary-color;
+        color: white;
+
+        &:hover {
+            background-color: darken(@primary-color, 10%);
+        }
+    }
+
+    &.success {
+        background-color: @success-color;
+        color: white;
+
+        &:hover {
+            background-color: darken(@success-color, 10%);
+        }
+    }
+
+    &.error {
+        background-color: @error-color;
+        color: white;
+
+        &:hover {
+            background-color: darken(@error-color, 10%);
+        }
+    }
+
+    &:active {
+        position: relative;
+        top: 2px;
+    }
+}

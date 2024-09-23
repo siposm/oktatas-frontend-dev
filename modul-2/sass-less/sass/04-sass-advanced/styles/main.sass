@@ -1,0 +1,88 @@
+// Import variables and mixins
+@import "variables"
+@import "mixins"
+
+// Global styles
+body
+    font-family: Arial, sans-serif
+    font-size: $font-size-base
+    color: $primary-color
+    background-color: #f8f9fa
+    // This below works only if the bottom @import is commented out
+    @media (max-width: $screen-sm)
+        background-color: $error-color
+
+.container
+    width: 80%
+    margin: 0 auto
+    margin-bottom: $margin-size-lg
+    margin-top: $margin-size-lg
+    padding: 20px
+    @include rounded-corners
+    @include border-color(white)
+    @include box-shadow()
+
+a
+    text-decoration: none
+
+.badge
+    padding: $padding-size-sm $padding-size-md
+    @include rounded-corners($radius: 50%)
+
+    &.primary
+        background-color: $primary-color
+        @include text-color(light)
+
+    &.light
+        background-color: $white-color
+        @include text-color(dark)
+
+// Header styles
+header
+    background-color: $secondary-color
+    padding: 20px
+
+    h1
+        font-size: $font-size-lg
+        margin-bottom: 10px
+
+    p
+        font-size: $font-size-base
+        color: white
+
+// Button styles
+.btn
+    padding: 10px 20px
+    border: none
+    cursor: pointer
+    @include rounded-corners
+
+    &.primary
+        background-color: $primary-color
+        color: white
+
+        &:hover
+            background-color: darken($primary-color, 10%)
+
+    &.success
+        background-color: $success-color
+        color: white
+
+        &:hover
+            background-color: darken($success-color, 10%)
+
+    &.error
+        background-color: $error-color
+        color: white
+
+        &:hover
+            background-color: darken($error-color, 10%)
+
+    &:active
+        position: relative
+        top: 2px
+
+// @import "media"
+// Media queries MUST BE at the bottom, otherwise everything will override
+// See what happens when this line is used at the top => no media queries will work
+// As alternative version, media queries should be used in the element itself!    
