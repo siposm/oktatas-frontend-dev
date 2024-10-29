@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "target": "ES2023", // A célnyelv verziója
+        "module": "ES6", // A modul rendszer típusa
+        "outDir": "./dist", // A fordított fájlok kimeneti könyvtára
+        "rootDir": "./src", // A forrásfájlok gyökérkönyvtára
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "strict": true, // Szigorú típusellenőrzés
+        "esModuleInterop": true, // Interoperabilitás az ES modulokkal
+        "forceConsistentCasingInFileNames": true, // Következetes nagybetű használat
+        "skipLibCheck": true // Könyvtár ellenőrzésének kihagyása
+    },
+    "include": [
+        "./src/**/*.ts" // A fordításba bevont fájlok
+    ],
+    "exclude": [
+        "node_modules", // Kizárt könyvtárak
+        "**/*.spec.ts" // Kizárt fájlok (pl. tesztfájlok)
+    ],
+    "tsc-alias": {
+        "verbose": false,
+        "resolveFullPaths": true,
+        "fileExtensions": {
+            "inputGlob": "{js,jsx,mjs}",
+            "outputCheck": [
+                "js",
+                "json",
+                "jsx",
+                "mjs"
+            ]
+        }
+    }
+}

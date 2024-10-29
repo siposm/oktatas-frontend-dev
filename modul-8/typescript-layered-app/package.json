@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.5.4",
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "build": "tsc && npx tsc-alias",
+    "build:watch": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")"
+  }
+}
