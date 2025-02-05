@@ -14,11 +14,11 @@ A tantárgy célja, hogy a hallgatók megfelelő ismereteket szerezzenek a klien
 
 ## Modulok
 
-### Modul-1: HTML és CSS alapok
+### Modul 1: HTML és CSS alapok
 
 Kliensoldali fejlesztéssel kapcsolatos tématerületek áttekintése. A leíró nyelvek megismerése (HTML, markdown, Tex). A szerver-kliens alapú kommunikáció folyamata. Alapvető HTML oldal létrehozása és saját stílusokkal történő kiegészítése CSS segítségével. A head elem részletes bemutatása.
 
-```
+```txt
   1.01 Bevezető, tárgyismertető
   1.02 Frontend roadmap
   1.03 Leíró nyelvek
@@ -41,11 +41,11 @@ Kulcsszavak:
 <br>
 <br>
 
-### Modul-2: HTML és CSS haladó ismeretek
+### Modul 2: HTML és CSS haladó ismeretek
 
 A CSS haladó funkcióinak valamint további HTML elemeknek a megismerése. Oldalstruktúra kialakítása (div, flexbox, grid). Webergonómia, tipográfia, UI és UX alapismeretek. Reszponzív alkalmazás készítésének alapelvei. CSS extra lehetőségek.
 
-```
+```txt
   2.01 CSS haladó ismeretek I.
   2.02 HTML további elemek
   2.03 Oldalstruktúra kialakítása
@@ -78,11 +78,11 @@ Kulcsszavak:
 <br>
 <br>
 
-### Modul-3: JavaScript alapok, nyelvi sajátosságok
+### Modul 3: JavaScript alapok, nyelvi sajátosságok
 
 A JavaScript nyelv története, nyelvi sajátosságai (típusok, változótípusok, operátorok, függvények, objektumok és osztályok). A DOM megismerése. DOM elemek lekérdezése és módosítása. Felületi elemek programozása. Stílusok és stíluslapok programozott előállítása. Oldalbetöltés folyamata. Események kezelése.
 
-```
+```txt
   3.01 Bevezető
   3.02 JS történelem, nyelvi alapok és sajátosságok
   3.03 Szerver-kliens kommunikáció
@@ -137,7 +137,7 @@ Kulcsszavak:
 
 Haladó eseménykezelés a JavaScript-ben. Események paraméterezése, eseményobjektum, események továbbadása (buborékozás, delegálás), saját események létrehozása. Gyakorlati feladatmegoldások (interaktív to do lista készítése, automatizált képcserélés, rajzolás, felhasználó eltérítése (~erőltetett hirdetés)).
 
-```
+```txt
   4.01 Bevezető
   4.02 Haladó eseménykezelés I.
   4.03 Feladat: eseményobjektum
@@ -170,7 +170,7 @@ Kulcsszavak:
 
 További JS nyelvi elemek és adatszerkezetek használata. Web APIk és a BOM megismerése. Kódszervezés modulba rendezett file-ok segítségével. Egységbezárás osztályok esetén és a this kulcsszó vonatkozása. Adat helyének meghatározása, illetve az adat leképezése generáláson keresztül. Imperatív és deklaratív felhasználói felület kezelése. Progresszív webalkalmazás (weboldal vs webalkalmazás) fejlesztésének bemutatása, a GD és PE koncepciókon keresztül.
 
-```
+```txt
   5.01 Bevezető
   5.02 További JS nyelvi elemek
   5.03 Adatszerkezetek
@@ -215,7 +215,7 @@ Kulcsszavak:
 
 Haladó ismeretek bővítése az alábbi fogalmak megismerésével: callback függvény, promise-ok létrehozása és kezelése, az async-await páros felhasználása. A CORS jelenség bemutatása. Beépített tömb metódusok megismerése és használata. Komplex feladat megoldása backend API hívásokkal (Fetch API-t és Promise-okat felhasználva), melyeken keresztül lehet hallgatókat listázni, új hallgatót felvenni, meglévő hallgatót módosítani.
 
-```
+```txt
   6.01 Bevezető
   6.02 Callback
   6.03 Promise
@@ -256,7 +256,7 @@ Kulcsszavak:
 
 Haladó ismeretek bővítése a JS működési hátterének megismerésével. JS Engine és Runtime fogalmak megismerése és a hozzájuk szorosan kapcsolódó további fogalmak (compilation, interpretation, JIT, AST, event loop, execution context, call stack, scope chain, hositing, TDZ). Valódi párhuzamosságra alkalmas módszer megismerése. Az AJAX technológia és annak jelentőségének megismerése.
 
-```
+```txt
   7.01 Bevezető
   7.02 JS engine
   7.03 AST
@@ -301,17 +301,20 @@ Kulcsszavak:
 
 A TypeScript nyelv megismerése, alapvető példák bemutatása. Komplexebb, rétegzett alkalmazás készítése TS-ben.
 
-```
+```txt
   8.01 Bevezető
-  8.0x todo
-  8.0x todo
-  8.0x todo
+  8.02 TypeScript alapvető működése (fordítás)
+  8.03 Figyelt fájlok (automatikus fordítás) létrehozása package.json és tsconfig.json állományok felhasználásával
+  8.04 Rétegzett CRUD TypeScript alkalmazás készítése
 ```
 
 Kulcsszavak:
-  `todo`
-  `todo`
-  `todo`
+  `compile`
+  `tsc`
+  `tsconfig.json`
+  `package.json`
+  `layering`
+  `CRUD`
 
 <br>
 <br>
@@ -321,7 +324,7 @@ Kulcsszavak:
 
 A JavaScript keretrendszerek és library közötti különbség bemutatása. A jQuery megismerése, történelmi áttekintése. A JavaScript aktuális helyzete a piacon (state of JS). Template engine-k és a virtual DOM jelentőségének bemutatása a modern keretrendszerek esetén. A tech stack fogalmának megismerése és az elterjedt alternatívák vizsgálata. Angular projekt létrehozására szolgáló opciók megismerése. Angular projekt futtatása, Angular CLI-on keresztül (ng serve), vagy NPM-en keresztül (npm start). Angular alkalmazás fájlstruktúrájának megismerése, valamint az alapvető nyelvi elemek megismerése (ciklus, if, adatkötés, típusosság).
 
-```
+```txt
   9.01 Bevezető
   8.02 Framework vs library
   8.03 Template engine
@@ -358,7 +361,7 @@ Kulcsszavak:
 
 To Do alkalmazás készítése Angular segítségével. Adatkötés (tömb, input mezők) és típusok (TypeScript) használata. Keretrendszeri elemek használata: ngFor, click, class és value adatkötése. Fetch API használata.
 
-```
+```txt
   10.01 Bevezető
   10.02 Projekt inicializálás
   10.03 Adatbetöltés fetch API-val
@@ -387,7 +390,7 @@ Kulcsszavak:
 
 Több komponensből felépülő, User és Comment kezelő CRUD alkalmazás készítése Angular keretrendszerben. Routing felhasználás a navigációban. Komponensek közötti kommunikáció, adattovábbítás. Bootstrap elemek felhasználása.
 
-```
+```txt
   11.01 Bevezető
   11.02 Projekt inicializálás
   11.03 Komponensek létrehozása
@@ -424,7 +427,7 @@ Kulcsszavak:
 
 Több komponensből felépülő, Teacher és Subject (valamint a köztük található reláció) kezelő CRUD alkalmazás készítése Angular keretrendszerben. Routing felhasználás a navigációban. Auth guard alkalmazása (csak authentikált felhasználók számára elérhető komponensek). Komponensek közötti kommunikáció, adattovábbítás. Angular Material UI és annak komponenseinek felhasználása. Regisztráció és bejelentkezés implementálása JWT token és localstorage segítségével.
 
-```
+```txt
   12.01 Bevezető
   12.02 Projekt inicializálás, Angular Material UI telepítés
   12.03 Alap komponensek létrehozása, routing beállítás
