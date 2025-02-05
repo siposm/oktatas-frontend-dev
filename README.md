@@ -299,12 +299,12 @@ Kulcsszavak:
 
 ### Modul 8: Programozás TypeScript-ben
 
-A TypeScript nyelv megismerése, alapvető példák bemutatása. Komplexebb, rétegzett alkalmazás készítése TS-ben.
+A TypeScript nyelv megismerése, alapvető példák bemutatása. Komplexebb, rétegzett alkalmazás készítése TS-ben, automatikusan forduló fájlok konfigurációjával.
 
 ```txt
   8.01 Bevezető
   8.02 TypeScript alapvető működése (fordítás)
-  8.03 Figyelt fájlok (automatikus fordítás) létrehozása package.json és tsconfig.json állományok felhasználásával
+  8.03 Figyelt fájlok (automatikus fordítás)
   8.04 Rétegzett CRUD TypeScript alkalmazás készítése
 ```
 
