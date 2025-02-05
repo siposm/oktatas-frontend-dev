@@ -1,14 +1,18 @@
-### Követelmények
+# Kliensoldali fejlesztés
+
+## A kurzus célja, elsajátítható kompetenciák
+
+A tantárgy célja, hogy a hallgatók megfelelő ismereteket szerezzenek a kliensoldali fejlesztés témakörében. Megtanulják a web alapjaként szolgáló HTML leíró nyelvet, kiegészítve a stíluslapokkal CSS, így saját struktúrákat, elrendezéseket képesek kialakítani. Megtanulnak használni külső stíluskönyvtárakat is (pl. Bootstrap, Material UI stb.). Megtanulják a JavaScript kliensoldali nyelv alapvető működését, nyelvi sajátosságait. Megismerkednek a következő fogalmakkal: DOM, Web APIs, events, JSON, jQuery, AJAX, TypeScript, lifecycle, cookie. Megismerkednek a Vue keretrendszer alapjaival, adatkötéssel, CDN felhasználással. Megismerkednek az Angular keretrendszerrel részletesebben.
+
+## Követelmények
 
 <https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes/>
 
-### Tárgy weboldala
+## Tárgy weboldala
 
 <https://nik.siposm.hu/kf>
 
-<br>
-<br>
-<br>
+## Modulok
 
 ### Modul-1: HTML és CSS alapok
 
