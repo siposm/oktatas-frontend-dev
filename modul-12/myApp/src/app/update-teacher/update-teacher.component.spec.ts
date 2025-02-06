@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { UpdateTeacherComponent } from './update-teacher.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 describe('UpdateTeacherComponent', () => {
   let component: UpdateTeacherComponent;
@@ -8,9 +10,16 @@ describe('UpdateTeacherComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UpdateTeacherComponent ]
+      declarations: [UpdateTeacherComponent],
+      imports: [HttpClientModule, MatSnackBarModule],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: { snapshot: { params: { id: '1' } } }
+        }
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(UpdateTeacherComponent);
     component = fixture.componentInstance;

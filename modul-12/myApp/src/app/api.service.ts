@@ -11,13 +11,13 @@ export class ApiService {
         this.router = router
     }
 
-    public isLoggedIn():boolean {
+    public isLoggedIn(): boolean {
         let token = localStorage.getItem('nikprog-practiceapi-token')
         // TODO check expiration date etc.
         return token !== null
     }
 
-    public canActivate() : boolean {
+    public canActivate(): boolean {
         if (!this.isLoggedIn()) {
             this.router.navigate(['/login'])
             return false
