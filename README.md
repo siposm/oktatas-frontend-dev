@@ -2,7 +2,7 @@
 
 ## A kurzus célja, elsajátítható kompetenciák
 
-A tantárgy célja, hogy a hallgatók megfelelő ismereteket szerezzenek a kliensoldali fejlesztés témakörében. Megtanulják a web alapjaként szolgáló HTML leíró nyelvet, kiegészítve a stíluslapokkal CSS, így saját struktúrákat, elrendezéseket képesek kialakítani. Megtanulnak használni külső stíluskönyvtárakat is (pl. Bootstrap, Material UI stb.). Megtanulják a JavaScript kliensoldali nyelv alapvető működését, nyelvi sajátosságait. Megismerkednek a következő fogalmakkal: DOM, Web APIs, events, JSON, jQuery, AJAX, TypeScript, lifecycle, cookie. Megismerkednek a Vue keretrendszer alapjaival, adatkötéssel, CDN felhasználással. Megismerkednek az Angular keretrendszerrel részletesebben.
+A tantárgy célja, hogy a hallgatók megfelelő ismereteket szerezzenek a kliensoldali fejlesztés témakörében. Megtanulják a web alapjaként szolgáló HTML leíró nyelvet, kiegészítve a stíluslapokkal CSS, így saját struktúrákat, elrendezéseket képesek kialakítani. Megtanulnak használni külső stíluskönyvtárakat is (pl. Bootstrap, Material UI stb.), valamint CSS preprocesszorokat (pl. Sass, Less). Megtanulják a JavaScript kliensoldali nyelv alapvető működését, nyelvi sajátosságait. Megismerkednek a következő fogalmakkal: DOM, Web APIs, events, JSON, jQuery, AJAX, TypeScript, lifecycle, cookie. Megismerkednek az Angular keretrendszerrel részletesebben, és az ide vonatkozó elméleti témakörökkel (pl. adatkötés, komponensek, dependency injection, routing stb.).
 
 ## Követelmények
 
@@ -78,9 +78,9 @@ Kulcsszavak:
 <br>
 <br>
 
-### Modul 3: JavaScript alapok, nyelvi sajátosságok
+### Modul 3: CSS preprocesszorok, JavaScript alapok
 
-A JavaScript nyelv története, nyelvi sajátosságai (típusok, változótípusok, operátorok, függvények, objektumok és osztályok). A DOM megismerése. DOM elemek lekérdezése és módosítása. Felületi elemek programozása. Stílusok és stíluslapok programozott előállítása. Oldalbetöltés folyamata. Események kezelése.
+CSS preprocesszorok használata (Less, Sass). A JavaScript nyelv története, nyelvi sajátosságai (típusok, változótípusok, operátorok, függvények, objektumok és osztályok). A DOM megismerése. DOM elemek lekérdezése és módosítása. Felületi elemek programozása. Stílusok és stíluslapok programozott előállítása. Oldalbetöltés folyamata. Események kezelése.
 
 ```txt
   3.01 Bevezető
@@ -99,6 +99,8 @@ A JavaScript nyelv története, nyelvi sajátosságai (típusok, változótípus
 ```
 
 Kulcsszavak:
+    `Sass`
+    `Less`
     `ECMAScript`
     `== vs ===`
     `DOM`
