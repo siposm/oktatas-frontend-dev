@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="name">
+<br>
+<input type="password" [(ngModel)]="password">
+<br>
+<button (click)="login()" [disabled]="buttonDisabled()">
+  Login
+</button>
