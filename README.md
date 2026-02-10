@@ -6,7 +6,7 @@ A tantárgy célja, hogy a hallgatók megfelelő ismereteket szerezzenek a klien
 
 ## Követelmények
 
-<https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes-5/>
+<https://nik.uni-obuda.hu/targyleirasok/tantargyak/kliensoldali-fejlesztes-6/>
 
 ## Tárgy weboldala
 
