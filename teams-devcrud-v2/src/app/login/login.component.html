@@ -1,0 +1,16 @@
+<h2 class="display-6 mb-5">Login</h2>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">Username</span>
+    <input type="text" class="form-control" [(ngModel)]="user.username">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">Password</span>
+    <input type="password" class="form-control" [(ngModel)]="user.password">
+</div>
+
+<button class="btn btn-success" (click)="authService.login(user)">
+	<i class="bi bi-door-open-fill me-1"></i>
+	Login
+</button>

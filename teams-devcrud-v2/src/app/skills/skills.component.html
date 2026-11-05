@@ -1,0 +1,89 @@
+<h2 class="display-6 mb-5">Create developer</h2>
+
+<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalToCreate">
+		<i class="bi bi-plus-circle me-1"></i>
+		Create skill
+</button>
+
+<table class="table table-striped table-hover align-middle mt-3">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let skill of service.skills">
+      <td>{{ skill.id | slice:0:8 }}</td>
+      <td>{{ skill.name }}</td>
+      <td>{{ skill.description }}</td>
+      <td>
+        <button class="btn btn-sm btn-warning me-2" (click)="service.loadForEdit(skill)" data-bs-toggle="modal" data-bs-target="#modalToEdit">
+            <i class="bi bi-pencil-square"></i>
+        </button>
+        <button class="btn btn-sm btn-danger" (click)="service.delete(skill)">
+            <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal TO CREATE -->
+<div class="modal fade" id="modalToCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create skill</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- <input class="form-control mb-1" type="text" placeholder="Id" [(ngModel)]="service.skillToCreate.id" disabled> -->
+                <input class="form-control mb-1" type="text" placeholder="Name" [(ngModel)]="service.skillToCreate.name">
+                <textarea class="form-control mb-1" placeholder="Description"
+                    [(ngModel)]="service.skillToCreate.description"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-x-circle me-1"></i>
+                    Close
+                </button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" (click)="service.create()">
+                    <i class="bi bi-plus-circle me-1"></i>
+                    Create
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal TO EDIT -->
+<div class="modal fade" id="modalToEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit skill</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input class="form-control mb-1" type="text" placeholder="Id" [(ngModel)]="service.skillToEdit.id"
+                    disabled>
+                <input class="form-control mb-1" type="text" placeholder="Name" [(ngModel)]="service.skillToEdit.name">
+                <textarea class="form-control mb-1" placeholder="Description"
+                    [(ngModel)]="service.skillToEdit.description"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-x-circle me-1"></i>
+                    Close
+                </button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" (click)="service.update()">
+                    <i class="bi bi-floppy me-1"></i>
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

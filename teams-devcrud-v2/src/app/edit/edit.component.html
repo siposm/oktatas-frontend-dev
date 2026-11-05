@@ -1,0 +1,70 @@
+<h2 class="display-6 mb-5">Edit developer</h2>
+
+<div class="input-group mb-3">
+	<span class="input-group-text">
+		<i class="bi bi-fingerprint me-3"></i>
+		ID
+	</span>
+	<input type="text" disabled class="form-control" [(ngModel)]="developerToEdit.id">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">
+			<i class="bi bi-person me-3"></i>
+			Name
+		</span>
+    <input type="text" class="form-control" [(ngModel)]="developerToEdit.name">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">
+			<i class="bi bi-envelope me-3"></i>
+			Email
+		</span>
+    <input type="text" class="form-control" [(ngModel)]="developerToEdit.email">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">
+			<i class="bi bi-briefcase me-3"></i>
+			Job
+		</span>
+    <input type="text" class="form-control" [(ngModel)]="developerToEdit.job">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">
+			<i class="bi bi-calendar me-3"></i>
+			Age
+		</span>
+    <input type="number" class="form-control" [(ngModel)]="developerToEdit.age">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">
+			<i class="bi bi-cash-stack me-3"></i>
+			Salary
+		</span>
+    <input type="number" class="form-control" [(ngModel)]="developerToEdit.salary">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">
+			<i class="bi bi-image me-3"></i>
+			Image URL
+		</span>
+    <input type="text" class="form-control" [(ngModel)]="developerToEdit.image">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">
+			<i class="bi bi-tools me-3"></i>
+			Skills (comma separated)
+		</span>
+    <input type="text" class="form-control" [(ngModel)]="developerToEdit.skillsAsString">
+</div>
+
+<button class="btn btn-success" (click)="save()">
+	<i class="bi bi-save me-1"></i>
+	Update developer
+</button>

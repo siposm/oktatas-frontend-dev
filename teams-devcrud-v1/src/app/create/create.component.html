@@ -1,0 +1,21 @@
+<div class="input-group mb-3">
+    <span class="input-group-text">Name</span>
+    <input type="text" class="form-control" [(ngModel)]="developer.name">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">Age</span>
+    <input type="number" class="form-control" [(ngModel)]="developer.age">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">Job</span>
+    <input type="text" class="form-control" [(ngModel)]="developer.job">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">Salary</span>
+    <input type="number" class="form-control" [(ngModel)]="developer.salary">
+</div>
+
+<button class="btn btn-success" (click)="save()">Create developer</button>

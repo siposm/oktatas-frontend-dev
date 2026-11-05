@@ -1,0 +1,10 @@
+<h1>Sziasztok</h1>
+<hr>
+<input type="text" [(ngModel)]="newTodo.content">
+<button (click)="add()">Create</button>
+<hr>
+<div *ngFor="let item of todos">
+	<div [ngClass]="item.done ? 'ready' : 'pending'">
+			{{ item.content }}
+	</div>
+</div>

@@ -1,0 +1,39 @@
+<h2 class="display-6 mb-5">Developers</h2>
+<table class="table table-striped table-hover align-middle">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mail</th>
+      <th>Job</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Skills</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dev of service.developers">
+      <td>
+				<img src="{{ dev.image }}" alt="profile-image" width="40px" class="rounded-circle mx-2">
+				{{ dev.name }}
+			</td>
+      <td>{{ dev.email }}</td>
+      <td>{{ dev.job }}</td>
+      <td>{{ dev.age }}</td>
+      <td>{{ dev.getFormattedSalary() }}</td>
+			<td>
+				<ul>
+					<li *ngFor="let skill of dev.skills">{{ skill }}</li>
+				</ul>
+			</td>
+      <td>
+        <button class="btn btn-sm btn-danger me-1" (click)="delete(dev)">
+          <i class="bi bi-trash3"></i>
+        </button>
+        <button class="btn btn-sm btn-warning" routerLink="/edit/{{ dev.id }}">
+          <i class="bi bi-pencil"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

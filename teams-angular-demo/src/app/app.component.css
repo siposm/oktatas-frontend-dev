@@ -1,0 +1,11 @@
+.pending {
+	background-color: orange;
+}
+
+.ready {
+	background-color: greenyellow;
+}
+
+div {
+	margin: 2px;
+}

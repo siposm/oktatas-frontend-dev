@@ -1,0 +1,30 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Job</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dev of developers">
+      <td>{{ dev.name }}</td>
+      <td>{{ dev.job }}</td>
+      <td>{{ dev.age }}</td>
+      <td>{{ dev.getFormattedSalary() }}</td>
+      <td>
+        <button
+          class="btn btn-sm btn-danger me-1"
+          (click)="deleteDeveloper(dev)"
+        >
+          Del
+        </button>
+        <button class="btn btn-sm btn-warning" routerLink="/edit/{{ dev.id }}">
+          Edit
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
